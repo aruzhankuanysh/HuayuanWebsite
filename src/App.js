@@ -1,143 +1,36 @@
 import "./App.css";
+import Brochure from "./components/app/Brochure";
 import Header from "./components/header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <div className="js-byrefresh js-no-ajax    en-lang">
+      <div className="js-byrefresh js-no-ajax en-lang home">
         <div className="home-fullvideos-container">
           <div className="block-bg-cover full-video">
             <video className="element-cover">
               <source src="index.html" type="video/mp4" />
             </video>
           </div>
-
           <button className="elastic-btn">
             <svg viewBox="0 0 74 70">
-              <path
-                className="morph-bg"
+              <path className="morph-bg"
                 d="M.9 37.9C2.9 65 19.3 69 41.1 69 63 69 73.2 53.8 73.2 35S63 1 41.1 1C17.5 1-1.2 8.8.9 37.9z"
                 data-hover="M1.9 37.9C3.9 65 19.3 66 41.1 66 63 66 72.2 53.8 72.2 35S63 4 41.1 4C17.5 4-.2 8.8 1.9 37.9z"
-                data-original="M.9 37.9C2.9 65 19.3 69 41.1 69 63 69 73.2 53.8 73.2 35S63 1 41.1 1C17.5 1-1.2 8.8.9 37.9z"
-              ></path>
-              <path
-                className="morph-element"
+                data-original="M.9 37.9C2.9 65 19.3 69 41.1 69 63 69 73.2 53.8 73.2 35S63 1 41.1 1C17.5 1-1.2 8.8.9 37.9z">
+              </path>
+              <path className="morph-element"
                 d="M41.3 31.8c-.1-6.8-.7-7.5-3.5-7.5-3.4 0-4.1.7-4.3 7.5-7.8.1-7.8.9-7.8 4.2 0 2.9 1.2 3.5 7.8 3.6.2 6.5 1 6.9 4.2 6.9 2.9 0 3.5-.8 3.6-6.9 7.5-.1 8.1-.6 8.1-3.5.1-3.5-.3-4.2-8.1-4.3z"
                 data-click="M37.2 31.8c-11.4 0-11.5.5-11.5 4.2 0 3.5 1.7 3.6 12.4 3.6 10.5 0 11.3-.3 11.3-3.5.1-4-.4-4.3-12.2-4.3z"
-                data-original="M41.3 31.8c-.1-6.8-.7-7.5-3.5-7.5-3.4 0-4.1.7-4.3 7.5-7.8.1-7.8.9-7.8 4.2 0 2.9 1.2 3.5 7.8 3.6.2 6.5 1 6.9 4.2 6.9 2.9 0 3.5-.8 3.6-6.9 7.5-.1 8.1-.6 8.1-3.5.1-3.5-.3-4.2-8.1-4.3z"
-              ></path>
+                data-original="M41.3 31.8c-.1-6.8-.7-7.5-3.5-7.5-3.4 0-4.1.7-4.3 7.5-7.8.1-7.8.9-7.8 4.2 0 2.9 1.2 3.5 7.8 3.6.2 6.5 1 6.9 4.2 6.9 2.9 0 3.5-.8 3.6-6.9 7.5-.1 8.1-.6 8.1-3.5.1-3.5-.3-4.2-8.1-4.3z">
+              </path>
             </svg>
           </button>
-        </div>
-        <div className="fazemos-lightbox">
-          <div className="case-images-container">
-            <svg
-              className="case-background-morph"
-              viewBox="0 0 3000 3000"
-              preserveAspectRatio="xMidYMin slice"
-            >
-              <path
-                className="letter-morph"
-                fill="#006CFF"
-                d="M7194.102,2377.678 c0,0,227.955,1001.8-707.857,1073.785c-935.812,71.986-1445.711-395.921-1913.618-395.921s-1757.647,527.895-1847.63-191.962 c-89.982-719.855,419.914-1097.781,389.921-1631.674S2365.07-393.771,3444.854-483.751 c1079.781-89.98,1301.738,359.929,2177.562,203.96C6498.241-435.76,7062.129-639.594,7176.105-36.777 S6978.145,1483.856,7194.102,2377.678z"
-              />
-              <path
-                className="background-rect"
-                fill="#006CFF"
-                d="M-662.206,585.545 c0,0-227.954-1001.799,707.858-1073.785S1491.363-92.319,1959.271-92.319S3716.918-620.214,3806.9,99.642 s-419.914,1097.782-389.921,1631.674s749.847,1625.677-329.936,1715.657s-1301.739-359.929-2177.564-203.96 S-530.233,3602.816-644.209,3000S-446.249,1479.366-662.206,585.545z"
-              />
-            </svg>
-
-            <ul className="slider">
-              <li className="slide">
-                <div className="block-bg-cover">
-                  <picture>
-                    <source
-                      srcset="/imgs/nearshoring/case-paribas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      className="element-cover"
-                      src="/imgs/nearshoring/case-paribas.jpg"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li className="slide">
-                <div className="block-bg-cover">
-                  <picture>
-                    <source
-                      srcset="/public/imgs/nearshoring/case-paribas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      className="element-cover"
-                      src="/imgs/nearshoring/case-paribas.jpg"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li className="slide">
-                <div className="block-bg-cover">
-                  <picture>
-                    <source
-                      srcset="/public/imgs/nearshoring/case-paribas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      className="element-cover"
-                      src="/imgs/nearshoring/case-paribas.jpg"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <button className="elastic-btn">
-            <svg
-              className="morph-shape"
-              viewBox="0 0 105 88"
-              data-morph-active="M5.48,58C8,91.85,32.95,74.22,55.26,86.83c23,13,42-9,42-32.5s-13-42.46-40.76-42.5C26.53,11.78,2.74,21.63,5.48,58Z"
-            >
-              <path d="M6,54.9C8.54,88.78,29.29,93.76,57,93.76s40.76-19,40.76-42.5S84.72,8.8,57,8.76C27,8.72,3.24,18.56,6,54.9Z" />
-            </svg>
-            <span className="xis">
-              <svg viewBox="0 0 40 40">
-                <path d="M5.74,34.17,34.26,5.83M5.83,5.74,34.17,34.26" />
-              </svg>
-            </span>
-          </button>
-
-          <div className="case-info-container">
-            <span className="case-logo">
-              <svg viewBox="0 0 239.53 52.27">
-                <path d="M0 0v52.27h53.16V0zm17.26 43.1a19.43 19.43 0 0 1-5.08-.8 8.15 8.15 0 0 0 .31 3l-.17.37a14 14 0 0 1-3.11-4.4 37 37 0 0 1-4.08-2.24l.17-.37a19.44 19.44 0 0 1 2.85-1 23.32 23.32 0 0 1 .07-6.41l.17-.37v.05a20.3 20.3 0 0 0 2.1 6.17c1.32-.25 2.45-.42 4-.65l-.18.38a15.68 15.68 0 0 0-1.29 2.25c-.11.26-.22.53-.32.81a13 13 0 0 0 4.72 2.9zm.4-14c-.78-1.87-1.9-5.6-1.9-5.6-2.14 1.15-7.08 5.78-7.08 5.78l.2-.38a30.25 30.25 0 0 1 5.18-7.62c-1-.89-3.38-1.35-5.13-1.43l.17-.36a20.4 20.4 0 0 1 5.22-.92 26.89 26.89 0 0 1 3 .05 14.94 14.94 0 0 1 5-2.54l-.24.33a19.13 19.13 0 0 0-1.13 2.52 24.25 24.25 0 0 1 8.69 3.17l-.17.36a28.74 28.74 0 0 0-8.07-.52 6.45 6.45 0 0 0-1.89.34 31.32 31.32 0 0 0-1.49 5.43l-.18 1zm14.07 10l-.18.37a39.67 39.67 0 0 1-3.67 3.39 12.1 12.1 0 0 0 .33 1.3l-.17.37a9.76 9.76 0 0 1-2.22.13 21.08 21.08 0 0 1-5.47 2.06l.17-.36a20.14 20.14 0 0 0 2.46-1.86 11.05 11.05 0 0 1-2.75-1l.17-.37a15.64 15.64 0 0 0 4.52-.63 40.16 40.16 0 0 0 2.55-3.14c0 .82.08 1.43.14 2.15a26.38 26.38 0 0 0 4.11-2.41zM47.17 9.48s-.29 1.12-2.29 2.54c.39 1.86-.85 9.34-1.88 11.38-.06.14-.11.27-.17.38 0-3.35-.35-7.58-1.59-9.42-3.29 1.92-4.29 2.08-7.86 4.22l.17-.4 1.43-1.56a32.38 32.38 0 0 0 2.4-3.14 79.94 79.94 0 0 0-11.36 1.32l.18-.37a46.16 46.16 0 0 1 11.5-3.7A48.21 48.21 0 0 0 30 6.26l.17-.37c4.61.36 10.24 2.09 13 3.76a21.41 21.41 0 0 1 4.2-.53l-.2.36zM72.55 20.03c3.25 0 4.44.69 4.44 2.46a1.88 1.88 0 0 1-.44 1.25 4 4 0 0 1-3.39 1h-.08l-.91 2.37h.91a5.19 5.19 0 0 1 4.16 1.5 2.39 2.39 0 0 1 .56 1.53c0 1.85-1.63 2.81-4.85 2.81h-2c-.07-2.45-.07-5.8-.07-6.85 0-1.17.08-3.77.13-6a8.81 8.81 0 0 1 1.56-.12m-6-1.7c.1 1.76.2 6.2.2 7.81s0 6.49-.26 8.64v.17h7.8c3.84 0 7.89-1.19 7.89-4.6 0-2.13-1.54-3.71-4.43-4.57 2.14-.58 3.57-2 3.57-3.71 0-2.78-3.19-3.83-6.2-3.9h-8.66zM100.15 18.17h-3.8l.15 4.23c.07 2.09.14 4.24.29 6.33a12.06 12.06 0 0 0-1.62-2.63c0-.06-4-6.13-5.32-7.85h-4.44v.16c.14 1.76.2 6.2.2 7.82s0 6.49-.21 8.64v.17h3.88v-.17c-.22-4.1-.22-8.23-.22-12.24a5.7 5.7 0 0 0 .93 1.82c.05.11 6.82 10 7.14 10.52v.07h3.15v-.17c-.24-2.15-.26-7.15-.26-8.64s.11-6.06.21-7.82v-.16zM110.45 20.2c2.19 0 3.72.4 4.44 1.32a2.31 2.31 0 0 1 .52 1.51c0 2.43-2.73 3-5 3l-.93-.05h-.38v-2.13-3.47a10.31 10.31 0 0 1 1.33-.1m-5.76-1.87c.21 1.69.21 6.12.21 7.69s0 6.49-.23 8.64v.17h4.67v-.17c-.16-1.55-.24-4.5-.26-6.76h1.54c6.15 0 9.13-1.63 9.13-5 0-3.89-4.19-4.79-7.69-4.86h-7.36zM134.41 20.2c2.19 0 3.72.4 4.45 1.32a2.28 2.28 0 0 1 .51 1.51c0 2.43-2.73 3-5 3l-.92-.05h-.39v-2.13-3.47a9.68 9.68 0 0 1 1.32-.1m-5.75-1.87c.15 1.76.23 6.2.23 7.82s0 6.49-.26 8.64v.17h4.67v-.17c-.15-1.55-.23-4.5-.23-6.76h1.52c6.14 0 9.16-1.63 9.16-5 0-3.89-4.22-4.79-7.73-4.86h-7.34zM151.11 23.1c.37.8 1.34 3 2.42 5.69h-4.85c.88-2.13 1.76-4.05 2.47-5.69m-1.14-4.94h-.13v.08c-.87 2.39-6.47 14.62-7.36 16.49l-.07.21h4v-.09c.35-1.15.82-2.45 1.33-3.83h6.65c.71 1.8 1.25 3.16 1.49 3.86v.07h4.61l-7.45-16.78h-3.1zM162.46 18.33c.13 1.76.2 6.2.2 7.82s0 6.49-.25 8.64v.17h4.7v-.17c-.25-2.17-.27-7.15-.27-8.64 0-1.17 0-3.77.15-5.87.36 0 .9-.08 1.27-.08 2.17 0 3.71.41 4.43 1.32a2.26 2.26 0 0 1 .5 1.51c0 1.94-1.81 2.92-3.5 3a5.14 5.14 0 0 1-1 0l-.33-.06.18.31c1.67 2.43 4.16 6.65 5.2 8.64v.07h5l-.13-.23c-.2-.28-3.47-5.1-4.87-7.15l-.12-.12c2.58-.77 3.82-2.21 3.82-4.42 0-3.87-4.19-4.79-7.73-4.86h-7.32zM185.43 18.17h-4.48v.16c.12 1.76.21 6.2.21 7.82s0 6.47-.23 8.64v.17h4.64v-.17c-.18-2.17-.23-7.16-.23-8.64s.11-6.06.23-7.82v-.16zM195.83 20.03c3.28 0 4.47.69 4.47 2.46a1.84 1.84 0 0 1-.45 1.25 4 4 0 0 1-3.39 1h-.08l-.9 2.37h.9a5.16 5.16 0 0 1 4.15 1.5 2.3 2.3 0 0 1 .58 1.53c0 1.85-1.64 2.81-4.87 2.81h-1.94c-.13-2.47-.13-5.82-.13-6.83 0-1.17 0-3.77.13-6a8.39 8.39 0 0 1 1.53-.12m-6-1.7c.13 1.76.21 6.2.21 7.81s0 6.49-.24 8.64v.17h7.82c3.82 0 7.89-1.19 7.89-4.6 0-2.13-1.55-3.71-4.46-4.57 2.15-.58 3.59-2 3.59-3.71 0-2.78-3.2-3.83-6.18-3.9h-8.68zM215.01 23.1c.38.78 1.33 3 2.42 5.68h-4.88c.87-2.14 1.72-4.05 2.46-5.68m1.93-4.93h-3.14v.07c-.94 2.54-6.86 15.41-7.36 16.48l-.09.23h4v-.1c.33-1.15.8-2.44 1.32-3.85H218.31c.72 1.8 1.26 3.18 1.49 3.85v.1h4.63l-7.44-16.78zM225.8 22.51c0 2.95 3 4.14 5.57 5.22 2 .81 4.17 1.66 4.17 3.07a1.45 1.45 0 0 1-.32 1c-.49.58-1.48.82-3.06.73a14.27 14.27 0 0 1-5.28-1.43l-.77-.37v3.66l.53.13.31.05a20.41 20.41 0 0 0 4.74.69c4.93 0 7.87-2 7.87-5.22 0-3.05-3-4.24-5.72-5.31-2-.8-4-1.59-4-2.9 0-.38 0-1.48 2.55-1.48a13.53 13.53 0 0 1 4.75 1.16l.95.4v-3.66l-.94-.17a21.42 21.42 0 0 0-4.2-.51c-4.25 0-7.09 2-7.09 4.95" />
-              </svg>
-            </span>
-            <div className="case-info" data-scrollBar>
-              <div className="case-info-wrapper">
-                <span className="case-subject"></span>
-                <h2 className="case-title"></h2>
-                <p className="case-text"></p>
-                <p className="case-text"></p>
-                <p className="case-text"></p>
-              </div>
-            </div>
-          </div>
-          <div className="mouse-icon">
-            <span className="scroll-helper">Scroll</span>
-            <span className="wheel"></span>
-          </div>
         </div>
 
         <div className="scroll-content-wrapper" data-scrollbar>
           <Header />
-          {/* <!-- ============= CONTENT ============= --> */}
+          {/* ============= CONTENT =============  */}
           <div className="page-main page-current">
             <div
               className="page-toload home-page"
@@ -149,91 +42,28 @@ function App() {
                 </h1>
 
                 <div className="background-wrapper">
-                  {/* <!-- <div className="webGL-main">
-				 	<div id="webGL-container"></div>
-				</div> -->
-                <!-- <div className="header-image-wrapper">
-					<div className="block-bg-cover">
-						<picture>
-							 <source srcset="" type="image/webp">
-				              <source srcset="/public/imgs/home/home-header-image-phone.jpg" media="(max-width: 414px)">
-				              <source srcset="/public/imgs/home/home-header-image-small.jpg" media="(max-width: 768px)">
-							<img className=" background-image element-cover" src="/public/imgs/home/home-header-image.jpg" alt="">
-						</picture>
-					</div>
-				</div>  --> */}
-
-                  {/* <!-- <div className="header-pictogram-wrapper">
-					<picture>
-						<source srcset="/public/imgs/home/home-pictogram-phone.png" media="(max-width: 414px)">
-						<img className=" header-pictogram" src="/public/imgs/home/home-pictogram.png" alt="">
-					</picture>
-				</div>--> */}
-
-                  {/* <!-- <div className="row expanded align-middle medium-collapse">
-					<div className="xxlarge-8 xxlarge-offset-5 xlarge-offset-5 large-9 large-offset-4 medium-10 medium-offset-4 small-14 small-offset-1 columns">
-						<div className="header-text">
-							<h2>Business hand in hand with technology.</h2>
-							<h3>We don’t just build working relationships — we grow pure affinity.</h3>
-						</div>
-				   </div>
-				  </div> --> */}
-
-                {/* <h1 style={{'color':'red', 'fontSize':'100px'}}>12121212121212121212</h1>
-                <img src='./video/map_pin_en.png' alt=""/> */}
                   <div className="video-event-container">
                     <div className="video-block block-bg-cover people-teaser">
-                      <video
-                        muted
-                        loop
-                        autoplay
-                        playsinline
-                        className="element-cover"
-                        poster="index.html"
-                      >
-                        <source
-                          src="/video/people-teaser.mp4"
-                          type="video/mp4"
-                        />
+                      <video muted loop autoplay playsinline className="element-cover" poster="App.js">
+                        <source src="/video/people-teaser.mp4" type="video/mp4"/>
                       </video>
                     </div>
                     <div className="video-block block-bg-cover business-teaser">
-                      <video
-                        muted
-                        loop
-                        playsinline
-                        className="element-cover"
-                        poster="index.html"
-                      >
-                        <source
-                          src="/video/business-teaser.mp4"
-                          type="video/mp4"
-                        />
+                      <video muted loop playsinline className="element-cover" poster="App.js">
+                        <source src="/video/business-teaser.mp4" type="video/mp4"/>
                       </video>
                     </div>
-                    <div
-                      className="video-event-split active people"
-                      data-id="people"
-                    >
+                    <div className="video-event-split active people" data-id="people" >
                       <span>People</span>
                       <svg viewBox="0 0 175 175">
-                        <path
-                          className="line"
-                          d="M87 1c47.497 0 86 38.504 86 86s-38.503 86-86 86S1 134.496 1 87 39.503 1 87 1z"
-                        />
+                        <path className="line" d="M87 1c47.497 0 86 38.504 86 86s-38.503 86-86 86S1 134.496 1 87 39.503 1 87 1z"/>
                         <path d="M72 64.588c1.656-1.632 3.462-2.077 5.118-.446l35.616 20.469c1.656 1.631 1.656 4.277 0 5.906l-35.616 20.471c-1.656 1.631-3.462 1.185-5.118-.446V64.588z" />
                       </svg>
                     </div>
-                    <div
-                      className="video-event-split business"
-                      data-id="business"
-                    >
+                    <div className="video-event-split business" data-id="business">
                       <span>Business</span>
                       <svg viewBox="0 0 175 175">
-                        <path
-                          className="line"
-                          d="M87 1c47.497 0 86 38.504 86 86s-38.503 86-86 86S1 134.496 1 87 39.503 1 87 1z"
-                        />
+                        <path className="line" d="M87 1c47.497 0 86 38.504 86 86s-38.503 86-86 86S1 134.496 1 87 39.503 1 87 1z"/>
                         <path d="M72 64.588c1.656-1.632 3.462-2.077 5.118-.446l35.616 20.469c1.656 1.631 1.656 4.277 0 5.906l-35.616 20.471c-1.656 1.631-3.462 1.185-5.118-.446V64.588z" />
                       </svg>
                     </div>
@@ -306,7 +136,7 @@ function App() {
 
                 <div className="deloitte-background">
                   <svg viewBox="0 0 396.12 688">
-                    {/* <path d="M396.12 0S39.37.83 3.12 255c-44 317.09 393 77.06 393 433z" pathdata:id="M398,1S41.25,1.83,5,256c-37,362,393,77.06,393,433Z;M395,3S40.25-2.17,4,252c-34,260,391,79.06,391,435Z;M396,1S42.25-.17,6,254c-34,260,389,75.06,389,431Z" /> */}
+                    <path d="M396.12 0S39.37.83 3.12 255c-44 317.09 393 77.06 393 433z M398,1S41.25,1.83,5,256c-37,362,393,77.06,393,433Z M395,3S40.25-2.17,4,252c-34,260,391,79.06,391,435Z M396,1S42.25-.17,6,254c-34,260,389,75.06,389,431Z" />
                   </svg>
                 </div>
                 <div className="popup-link">
@@ -319,7 +149,7 @@ function App() {
                     href="contacts/index.html"
                     data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
                     data-remote="true"
-                    data-targetClassnclassName="estamos"
+                    data-targetClass="estamos"
                     className="elastic-btn anchor"
                   >
                     <svg viewBox="0 0 164 69" preserveAspectRatio>
@@ -346,7 +176,7 @@ function App() {
                           <a
                             href="solutions/nearshore/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-service"
+                            data-targetClass="single-service"
                             data-ajaxUrl="https://affinity.pt/en/ajax/nearshoring-ajax/?ajax-id=76"
                             data-title="Nearshore"
                           >
@@ -363,7 +193,7 @@ function App() {
                           <a
                             href="solutions/outsourcing/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-service"
+                            data-targetClass="single-service"
                             data-ajaxUrl="https://affinity.pt/en/ajax/outsourcing-ajax/?ajax-id=78"
                             data-title="Outsourcing"
                           >
@@ -380,7 +210,7 @@ function App() {
                           <a
                             href="solutions/software/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-service"
+                            data-targetClass="single-service"
                             data-ajaxUrl="https://affinity.pt/en/ajax/software-ajax/?ajax-id=80"
                             data-title="Software"
                           >
@@ -397,6 +227,7 @@ function App() {
                     </div>
                   </div>
                 </section>
+                {/* We do */}
 
                 {/* <section
                   id="social-activity"
@@ -680,7 +511,7 @@ function App() {
                   </div>
                 </section> */}
 
-                {/* <section className="company-numbers js-hashtag-scroll">
+                <section className="company-numbers js-hashtag-scroll">
                   <div className="row expanded align-center">
                     <div className="xxlarge-16 xlarge-14 text-center">
                       <h2 className="hashtag-title js-write-text">#2022</h2>
@@ -713,7 +544,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </section> */}
+                </section>
 
                 <section className="job-offers container">
                   <div className="rotate-title">
@@ -791,7 +622,7 @@ function App() {
                         </h3>
                       </div>
 
-                      {/* <!-- <h2>Job Offers</h2>
+                      {/* <h2>Job Offers</h2>
             <h3 className="subtitle js-text-element">Where success is more a consequence than a goal.</h3>
 
             <a className="elastic-btn" href="#">
@@ -799,26 +630,26 @@ function App() {
                 <path className="morph-bg" d="M1.3 35.8c2 25.9 17.7 29.7 38.6 29.7h124.5C185.3 65.4 195 50.8 195 33S185.2.6 164.4.5H39.9C17.2.5-.7 8 1.3 35.8z" data-hover="M3.3 35.8c2 25.9 15.6 25.7 36.6 25.7h124.5C185.3 61.4 193 50.8 193 33s-8-28.5-28.7-28.5H39.8C17.1 4.5 1.3 8 3.3 35.8z" data-original="M1.3 35.8c2 25.9 17.7 29.7 38.6 29.7h124.5C185.3 65.4 195 50.8 195 33S185.2.6 164.4.5H39.9C17.2.5-.7 8 1.3 35.8z"></path>
               </svg>
               <span className="text">Ver Ofertas</span>
-            </a> --> */}
+            </a>  */}
                     </div>
 
-                    {/* <!-- <div className="xxlarge-6 xxlarge-offset-1 columns">
+                    {/* <div className="xxlarge-6 xxlarge-offset-1 columns">
             <img  className="keywork-image" src="/public/imgs/home/keywork.svg" alt="Keywork" >
-          </div> --> */}
+          </div>  */}
 
-                    {/* <!-- <div className="xxlarge-2 xxlarge-offset-5 medium-4 medium-offset-4 xsmall-14 xsmall-offset-1 columns text-right">
+                    {/* <div className="xxlarge-2 xxlarge-offset-5 medium-4 medium-offset-4 xsmall-14 xsmall-offset-1 columns text-right">
 						<a href="https://affinity.pt/en/careers/1487/"
 							 className="view-all"
 							 data-remote="true"
 							 data-targetClassnclassName="queremos"
            		 data-title="Careers"
 							>View all <span className="quantity">(1)</span></a>
-					</div> --> */}
+					</div>  */}
                   </div>
                   <div className="row expanded">
                     <div className="xxlarge-10 xxlarge-offset-4 medium-12 medium-offset-2 small-14 small-offset-1 columns">
                       <div className="row xxlarge-up-2 xsmall-up-1">
-                        {/* <!-- <a className="columns job-link job-spontaneous"
+                        {/* <a className="columns job-link job-spontaneous"
                  	href="https://affinity.key.work/jobs/register/1"
                  	target="_blank"
                  	rel="noreferrer"
@@ -827,9 +658,9 @@ function App() {
                   		<h2>Can't wait <br>to see the <strong style="font-weight:bold;">offers?</strong></h2>
                   		<h4>Click here and send us a spontaneous application.</h4>
                 	</div>
-              	</a> --> */}
+              	</a>  */}
 
-                        {/* <!-- <a className="columns job-link"
+                        {/* <a className="columns job-link"
                  	href="https://affinity.key.work/jobs/"
                  	target="_blank"
                  	rel="noreferrer"
@@ -846,7 +677,7 @@ function App() {
                     		Portugal
                   		</h4>
                 	</div>
-				  </a> --> */}
+				  </a>  */}
 
                         <a
                           className="columns job-link"
@@ -1151,101 +982,7 @@ function App() {
                 </section>
 
                 <footer className="page-footer type-1">
-                  <div className="row expanded align-center align-middle text-center content-wrapper">
-                    <div className="webGL-main">
-                      <div id="webGL-container"></div>
-                    </div>
-                    <div className="xxlarge-16 columns">
-                      <div className="row expanded align-center">
-                        <div className="xxlarge-14 xlarge-16 small-12 xsmall-14 columns">
-                          <h5>#moreaboutus</h5>
-                          <h2>Download our E-Brochure</h2>
-
-                          <div className="alphabeth-wrapper">
-                            <picture>
-                              <img
-                                className="alphabeth-image"
-                                src="/imgs/alphabeth_3d/headerA.png"
-                                alt=""
-                              />
-                            </picture>
-                          </div>
-                        </div>
-                        <div className="xxlarge-12 medium-14 columns">
-                          <form>
-                            <input type="hidden" name="language" value="en" />
-                            <input
-                              type="hidden"
-                              name="file_url"
-                              value="https://affinity.pt/public/uploads/2023/01/Affinity-Corporate-Brochure-2023-EN.pdf"
-                            />
-                            <div className="elastic-input">
-                              <label for="email">email address</label>
-                              <svg viewBox="0 0 370 76">
-                                <path
-                                  className="morph-bg"
-                                  d="M5.2 40.8c2 25.9 17.7 29.7 38.6 29.7h290.6C355.2 70.4 365 55.8 365 38s-9.8-32.4-30.6-32.5H43.8C21.1 5.5 3.1 13 5.2 40.8z"
-                                  data-hover="M7.3 40.8c2 25.9 15.6 25.7 36.6 25.7h290.5C355.3 66.4 363 55.8 363 38s-8-28.5-28.7-28.5H43.8C21.2 9.5 5.3 13 7.3 40.8z"
-                                />
-                              </svg>
-                              <input
-                                type="text"
-                                className="email required"
-                                name="email"
-                                autocomplete="off"
-                              />
-                              <span className="error-text">
-                                Please insert your email.
-                              </span>
-                            </div>
-                            <button className="elastic-btn">
-                              <svg viewBox="0 0 164 69">
-                                <path
-                                  className="morph-bg"
-                                  d="M3.2 37.3C5.1 63.2 20.8 67 41.5 67h89c20.8-.1 30.4-14.7 30.4-32.5S151.3 2.1 130.6 2h-89C19 2 1.2 9.5 3.2 37.3z"
-                                  data-hover="M5.1 37.3C7.1 63.2 20.7 63 41.5 63s68.2.1 89 0S159 52.3 159 34.5 151.1 6 130.5 6h-89C18.9 6 3.2 9.5 5.1 37.3z"
-                                />
-                              </svg>
-                              <span className="text">Submit</span>
-                              {/* <!-- Loader --> */}
-                              <div className="loader-wrapper">
-                                <div className="blobs">
-                                  <div className="blob-center"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob"></div>
-                                </div>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  version="1.1"
-                                >
-                                  <defs>
-                                    <filter id="goo">
-                                      <feGaussianBlur
-                                        in="SourceGraphic"
-                                        stdDeviation="10"
-                                        result="blur"
-                                      />
-                                      <feColorMatrix
-                                        in="blur"
-                                        mode="matrix"
-                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                                        result="goo"
-                                      />
-                                      <feBlend in="SourceGraphic" in2="goo" />
-                                    </filter>
-                                  </defs>
-                                </svg>
-                              </div>
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Brochure />
 
                   <div className="row expanded last-content-wrapper xsmall-collapse">
                     <div className="xxlarge-2 xxlarge-offset-1 medium-3 small-6 small-offset-0 xsmall-5 columns made-by">
@@ -1266,7 +1003,7 @@ function App() {
                         <h4>Reporting Channel </h4>
                       </a>
 
-                      {/* <!-- <h4>2023 &copy; Affinity</h4> --> */}
+                      {/* <h4>2023 &copy; Affinity</h4>  */}
                     </div>
                     <div className="xxlarge-10 medium-8 small-4 xsmall-16 columns text-center">
                       <svg className="main-logo" viewBox="0 0 1566.1 460.4">
@@ -1327,7 +1064,7 @@ function App() {
                 </footer>
               </main>
 
-              {/* <!-- preload  --> */}
+              {/* preload   */}
               <div className="preload" aria-hidden="true">
                 <img src="/imgs/home/home-header-image.jpg" alt="" />
                 <img src="/imgs/home/home-pictogram.png" alt="" />
@@ -1394,7 +1131,7 @@ function App() {
             />
           </svg>
 
-          {/* <!--first transition--> */}
+          {/* <!--first transition */}
           <svg
             viewBox="0 0 743 642"
             preserveAspectRatio="xMidYMin slice"
@@ -1407,7 +1144,7 @@ function App() {
               d="M422.061,740.244c-74.299-1.895-117.785,2.909-169.262,0.451 c-55.241-2.638-84.958-1.053-140.738-1.053c-154.469,0-74.875,54.419-27.575,68.248c87.387,25.548,207.696,0.396,277.422-3.664 c72.787-4.238,180.201,20.949,269.931,6.777c63.102-9.966,151.909-64.788-8.505-70.302 C529.354,737.471,477.023,748.924,422.061,740.244z"
             />
           </svg>
-          {/* <!--second transition--> */}
+          {/* <!--second transition */}
           <svg
             viewBox="0 0 743 642"
             preserveAspectRatio="xMidYMin slice"
@@ -1421,7 +1158,7 @@ function App() {
             />
           </svg>
 
-          {/* <!--third transition--> */}
+          {/* <!--third transition */}
           <svg
             viewBox="0 0 743 642"
             preserveAspectRatio="xMidYMin slice"
@@ -1435,7 +1172,7 @@ function App() {
             />
           </svg>
 
-          {/* <!--forth transition--> */}
+          {/* <!--forth transition */}
           <svg
             viewBox="0 0 743 642"
             preserveAspectRatio="xMidYMin slice"
@@ -1449,7 +1186,7 @@ function App() {
             />
           </svg>
 
-          {/* <!--fifth transition--> */}
+          {/* <!--fifth transition */}
           <svg
             viewBox="0 0 743 642"
             preserveAspectRatio="xMidYMin slice"
@@ -1469,14 +1206,14 @@ function App() {
             </div>
           </div>
         </div>
-        {/* <!--Loading Blob -->
-<!-- <div className="loading-blob">
+        {/* <!--Loading Blob 
+<div className="loading-blob">
   <svg viewBox="0 0 62 58">
     <path d="M0,32.45C0,14.12,3.5,3.12,23.17.45c23.33-2.33,38.33,4,38.67,26.17C61.67,50,51,58.12,31.33,58.12S0,48,0,32.45Z" data-morph="M6.44,24.66C25.78,14,.44,3,20.11.32c23.33-2.33,53.76,17,34,26.5C28.44,39.16,47.94,58,28.28,58S-7.13,32.15,6.44,24.66Z"></path>
   </svg>
-</div> --> */}
+</div>  */}
 
-        {/* <!-- MODAL --> */}
+        {/* MODAL  */}
         <div id="modal-bg"></div>
         <div id="modal-wrapper">
           {" "}
@@ -1485,10 +1222,10 @@ function App() {
             className="row align-middle align-center"
           ></div>
         </div>
-        {/* <!-- TRANSITION --> */}
+        {/* TRANSITION  */}
         <div id="loading-page" aria-hidden="true"></div>
 
-        {/* <!-- outdated browser  --> */}
+        {/* outdated browser   */}
         <div id="outdated">
           <h6>Your browser is out of date!</h6>
           <p>

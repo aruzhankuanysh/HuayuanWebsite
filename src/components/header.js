@@ -1,275 +1,6 @@
-import React, { useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
 
 function Header() {
-  // useEffect(() => {
-  //   const hoverLinksMenu = () => {
-  //     const navMain = document.getElementById("nav-main");
-  //     const navItems = document.querySelectorAll("#nav-main li");
-  //     const navLinks = document.querySelectorAll("#nav-main li a");
-
-  //     const createLetterSpans = () => {
-  //       navLinks.forEach((link) => {
-  //         const text = link.innerText;
-  //         const letters = text
-  //           .split("")
-  //           .map((letter) => `<span class='char'>${letter}</span>`)
-  //           .join("");
-  //         link.innerHTML = letters;
-  //       });
-  //     };
-
-  //     const animateLetters = (target, direction) => {
-  //       const letters = target.querySelectorAll(".char");
-  //       const color =
-  //         direction === "in"
-  //           ? target.getAttribute("data-color")
-  //           : document.body.classList.contains("home")
-  //           ? "#ffffff"
-  //           : "#9fa6b6";
-
-  //       gsap.to(letters, {
-  //         duration: 1,
-  //         color: color,
-  //         ease: "expo.out",
-  //         stagger: 0.05,
-  //         onComplete: () => {
-  //           if (direction === "out") {
-  //             gsap.set(letters, { clearProps: "color" });
-  //           }
-  //         },
-  //       });
-  //     };
-
-  //     createLetterSpans();
-
-  //     navItems.forEach((item) => {
-  //       item.addEventListener("mouseenter", () => {
-  //         if (!item.classList.contains("active")) {
-  //           animateLetters(item, "in");
-  //         }
-  //       });
-
-  //       item.addEventListener("mouseleave", () => {
-  //         if (!item.classList.contains("active")) {
-  //           animateLetters(item, "out");
-  //         }
-  //       });
-  //     });
-  //   };
-
-  //   hoverLinksMenu();
-  // }, []);
-  // useEffect(() => {
-  //   const toggleNavMobile = () => {
-  //     const body = document.body;
-  //     const headerMain = document.querySelector("#header-main");
-  //     const html = document.documentElement;
-
-  //     body.classList.toggle("js-nav-mobile-open");
-  //     headerMain.style.overflowX = body.classList.contains("js-nav-mobile-open")
-  //       ? "inherit"
-  //       : "";
-  //     window.viewportUnitsBuggyfill.refresh();
-  //     if (!html.classList.contains("safari")) {
-  //       document.documentElement.style.overflow = body.classList.contains(
-  //         "js-nav-mobile-open"
-  //       )
-  //         ? "hidden"
-  //         : "";
-  //     }
-  //     disableScroll();
-  //   };
-
-  //   const disableScroll = () => {
-  //     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-
-  //     document.body.style.overflow = "hidden";
-  //     document.body.style.paddingRight = `${scrollbarWidth}px`;
-  //   };
-
-  //   const enableScroll = () => {
-  //     document.body.style.overflow = '';
-  //     document.body.style.paddingRight = '';
-  //   };
-
-  //   const toggleLanguage = () => {
-  //     const body = document.body;
-  //     const languageWrapper = document.querySelector(".language-wrapper");
-  //     const otherLanguages = languageWrapper.querySelector(".other-languages");
-  //     const headerMain = document.querySelector("#header-main");
-
-  //     const isMobile = body.classList.contains("mobile");
-  //     if (!isMobile) {
-  //       body.classList.toggle("js-language-open");
-  //       if (headerMain.classList.contains("js-drop")) {
-  //         headerMain.classList.toggle("increaseHeight");
-  //       }
-  //       const arrow = languageWrapper.querySelector(".arrow");
-  //       gsap.fromTo(
-  //         arrow,
-  //         { y: "0px" },
-  //         {
-  //           y: "2px",
-  //           onComplete: function () {
-  //             gsap.fromTo(arrow, { y: "2px" }, { y: "0px", clearProps: "all" });
-  //           },
-  //         }
-  //       );
-  //       gsap.set(languageWrapper, { overflow: "visible" });
-  //       gsap.to(otherLanguages, { autoAlpha: 1, duration: 0.5 });
-  //     } else {
-  //       const activeLanguage =
-  //         languageWrapper.querySelector(".active-language");
-  //       activeLanguage.addEventListener("click", () => {
-  //         body.classList.toggle("js-language-open");
-  //         const arrow = languageWrapper.querySelector(".arrow");
-  //         gsap.fromTo(
-  //           arrow,
-  //           { y: "0px" },
-  //           {
-  //             y: "2px",
-  //             onComplete: function () {
-  //               gsap.fromTo(
-  //                 arrow,
-  //                 { y: "2px" },
-  //                 { y: "0px", clearProps: "all" }
-  //               );
-  //             },
-  //           }
-  //         );
-  //         gsap.to(otherLanguages, {
-  //           autoAlpha: body.classList.contains("js-language-open") ? 1 : 0,
-  //           duration: 0.5,
-  //         });
-  //       });
-  //       document.querySelector("#page-header").addEventListener("click", () => {
-  //         if (body.classList.contains("js-language-open")) {
-  //           body.classList.remove("js-language-open");
-  //           gsap.to(otherLanguages, {
-  //             autoAlpha: 0,
-  //             duration: 0.25,
-  //             onComplete: () => {
-  //               gsap.set(languageWrapper, { clearProps: "all" });
-  //             },
-  //           });
-  //         }
-  //       });
-  //     }
-  //   };
-
-  //   const handleMainLogoClick = () => {
-  //     const navMain = document.querySelector("#nav-main");
-  //     const navMainMobile = document.querySelector("#nav-main-mobile");
-  //     navMain
-  //       .querySelectorAll("li")
-  //       .forEach((li) => li.classList.remove("active"));
-  //     navMainMobile
-  //       .querySelectorAll("li")
-  //       .forEach((li) => li.classList.remove("active"));
-  //   };
-
-  //   const handleNavMainClick = (e) => {
-  //     const body = document.body;
-  //     const navMain = document.querySelector("#nav-main");
-  //     const closestLi = e.target.closest("li");
-  //     if (
-  //       closestLi.classList.contains("active") &&
-  //       !body.classList.contains("single-service") &&
-  //       !body.classList.contains("single-queremos")
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
-
-  //   const handleNavMainMobileClick = (e) => {
-  //     const body = document.body;
-  //     const navMainMobile = document.querySelector("#nav-main-mobile");
-  //     const closestLi = e.target.closest("li");
-  //     if (
-  //       closestLi.classList.contains("active") &&
-  //       !body.classList.contains("single-service") &&
-  //       !body.classList.contains("single-queremos")
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //     setTimeout(() => {
-  //       navMainMobile
-  //         .querySelectorAll("li")
-  //         .forEach((li) => li.classList.remove("active"));
-  //       closestLi.classList.add("active");
-  //     }, 800);
-  //   };
-
-  //   const navMainLinks = document.querySelectorAll("#nav-main li a");
-  //   navMainLinks.forEach((link) =>
-  //     link.addEventListener("click", handleNavMainClick)
-  //   );
-
-  //   const navMainMobileLinks = document.querySelectorAll(
-  //     "#nav-main-mobile li a"
-  //   );
-  //   navMainMobileLinks.forEach((link) =>
-  //     link.addEventListener("click", handleNavMainMobileClick)
-  //   );
-
-  //   document
-  //     .querySelector(".main-logo a")
-  //     .addEventListener("click", handleMainLogoClick);
-
-  //   document
-  //     .querySelector(".hamb-menu")
-  //     .addEventListener("click", toggleNavMobile);
-
-  //   document.querySelector(".close-hamb-menu").addEventListener("click", () => {
-  //     document.body.classList.remove("js-nav-mobile-open");
-  //     setTimeout(() => {
-  //       document.querySelector("#header-main").style.overflowX = "";
-  //     }, 800);
-  //     if (!document.documentElement.classList.contains("safari")) {
-  //       document.documentElement.style.overflow = "";
-  //     }
-  //     enableScroll();
-  //   });
-
-  //   document.querySelector(".outside-overlay").addEventListener("click", () => {
-  //     document.querySelector(".close-hamb-menu").click();
-  //   });
-
-  //   document
-  //     .querySelector(".language-wrapper")
-  //     .addEventListener("mouseenter", toggleLanguage);
-  //   document
-  //     .querySelector(".language-wrapper")
-  //     .addEventListener("mouseleave", toggleLanguage);
-
-  //   return () => {
-  //     navMainLinks.forEach((link) =>
-  //       link.removeEventListener("click", handleNavMainClick)
-  //     );
-  //     navMainMobileLinks.forEach((link) =>
-  //       link.removeEventListener("click", handleNavMainMobileClick)
-  //     );
-  //     document
-  //       .querySelector(".main-logo a")
-  //       .removeEventListener("click", handleMainLogoClick);
-  //     document
-  //       .querySelector(".hamb-menu")
-  //       .removeEventListener("click", toggleNavMobile);
-  //     document
-  //       .querySelector(".outside-overlay")
-  //       .removeEventListener("click", () => {
-  //         document.querySelector(".close-hamb-menu").click();
-  //       });
-  //     document
-  //       .querySelector(".language-wrapper")
-  //       .removeEventListener("mouseenter", toggleLanguage);
-  //     document
-  //       .querySelector(".language-wrapper")
-  //       .removeEventListener("mouseleave", toggleLanguage);
-  //   };
-  // }, []);
-
   return (
     <header
       id="header-main"
@@ -281,7 +12,7 @@ function Header() {
           <a
             href="https://affinity.pt/en"
             data-remote="true"
-            data-targetClassnclassName="home"
+            data-targetClass="home"
             data-ajaxUrl="https://affinity.pt/en/ajax/home-ajax/?ajax-id=74"
             data-title-home="Affinity - Nearshore | IT Consulting | Software Development"
             data-title-brand="Brand Guidelines"
@@ -295,7 +26,6 @@ function Header() {
           </a>
         </span>
       </div>
-      {/* <!-- Trocar para "medium-offset-1 medium-7" quando tiver os icons --> */}
       <div className="xxlarge-8 xxlarge-offset-2 xlarge-8 xlarge-offset-2 large-offset-1 large-9 medium-10 medium-offset-2 small-4 small-order-2 columns">
         <ul id="nav-main">
           <li
@@ -306,7 +36,7 @@ function Header() {
             <a
               href="about/index.html"
               data-remote="true"
-              data-targetClassnclassName="somos"
+              data-targetClass="somos"
               data-ajaxUrl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
@@ -321,7 +51,7 @@ function Header() {
             <a
               href="solutions/index.html"
               data-remote="true"
-              data-targetClassnclassName="fazemos"
+              data-targetClass="fazemos"
               data-ajaxUrl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
@@ -336,7 +66,7 @@ function Header() {
             <a
               href="careers/index.html"
               data-remote="true"
-              data-targetClassnclassName="queremos"
+              data-targetClass="queremos"
               data-ajaxUrl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
@@ -351,7 +81,7 @@ function Header() {
             <a
               href="news/index.html"
               data-remote="true"
-              data-targetClassnclassName="noticias"
+              data-targetClass="noticias"
               data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
@@ -366,7 +96,7 @@ function Header() {
             <a
               href="contacts/index.html"
               data-remote="true"
-              data-targetClassnclassName="estamos"
+              data-targetClass="estamos"
               data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
@@ -383,9 +113,6 @@ function Header() {
               <path d="M16.5 1.9L9 10.1 1.5 1.9" />
             </svg>
           </button>
-          {/* <!--<ul className="other-languages">	<li className="lang-item lang-item-2 lang-item-pt lang-item-first"><a  lang="pt-PT" hreflang="pt-PT" href="https://affinity.pt/">Português</a></li>
-</ul>--> */}
-
           <ul className="other-languages">
             <li>
               <a href="https://affinity.pt/">Português</a>
@@ -393,14 +120,6 @@ function Header() {
           </ul>
         </div>
         <ul id="nav-left">
-          {/* <!-- <li className="icon">
-<a href="https://www.key.work" rel="external">
- <svg viewBox="0 0 270.02 296.62">
-   <path fill="#2a6ff3" d="M0 0v296.62h67.51v-94.1l42.95-45.01 83.87 139.11h75.69L161.6 118.65H65.46V0H0z"/>
-   <path fill="#66dbac" d="M161.6 0v118.65L263.89 0H161.6z"/>
- </svg>
-</a>
-</li> --> */}
           <li className="icon with-icon">
             <a href="http://with.affinity.pt/" target="_blank" rel="noreferrer">
               <svg viewBox="0 0 856.9 329.1">
@@ -421,7 +140,7 @@ function Header() {
                   d="M856.9 195.3v128.6h-56.2V203.3c0-24.3-15.5-40.2-38.5-40.2-23.1 0-39.4 16.3-39.4 40.2V324h-56.6V9.7h56.6v124.5c13.8-13.8 33.5-22.2 57-22.2 47.3-.1 77.1 33.4 77.1 83.3zM403.3 323.9h65.2V101l-65.2-.2v223.1zm175.1-63V144.6H625v-43.8h-48.6V72.4c0-41.7-23.3-70.6-80.5-72.3-37.7-1.1-72.3 6.6-92.6 12.7-27.4 8.2-86.2 36.7-126.6 134.1l-28.9 65.6L192 100.9h-18.7l-54.4 114.9-48.4-109.6H0l104.6 217.7h18.8l59.5-111 59 111h18.8l92.6-197.7c.1-.2.3-.4.4-.7 9.8-18.5 43-69.6 113.5-74.8 6-.4 12.1-.5 18.2-.1 21.5 1.1 27.9 13.1 27.9 23.4l.3 188.1c0 43.6 24.3 67 67.9 67 19.4 0 38.8-7.9 49.8-15l.9-43.2c-10.6 4-22.9 7.9-35.7 7.9-11.5.2-18.1-6.9-18.1-17.9z"
                 />
                 <clipPath id="d">
-                  {/* <use xlink:href="#c" overflow="visible" /> */}
+                  <use href="#c" overflow="visible" />
                 </clipPath>
                 <ellipse
                   cx="380"
@@ -440,14 +159,6 @@ function Header() {
         <span className="outside-overlay"></span>
         <div className="sub-nav">
           <ul id="nav-left">
-            {/* <!-- <li className="icon">
-  <a href="https://www.key.work" rel="external">
-   <svg viewBox="0 0 270.02 296.62">
-     <path className="main" fill="#2a6ff3" d="M0 0v296.62h67.51v-94.1l42.95-45.01 83.87 139.11h75.69L161.6 118.65H65.46V0H0z"/>
-     <path fill="#66dbac" d="M161.6 0v118.65L263.89 0H161.6z"/>
-   </svg>
-  </a>
-</li> --> */}
             <li className="icon with-icon">
               <a
                 href="http://with.affinity.pt/"
@@ -463,7 +174,7 @@ function Header() {
                     <use href="#abc" overflow="visible" />
                   </clipPath>
                   <path
-                    clip-path="url(#bcd)"
+                    clipPath="url(#bcd)"
                     fill="#ffffff"
                     d="M-39.7-46.5h953.9V382H-39.7z"
                   />
@@ -500,11 +211,6 @@ function Header() {
                 </a>
               </li>
             </ul>
-            {/* <!-- <ul className="other-languages">
-            <li>
-                  <a href="https://affinity.pt/" >Português</a>
-              </li>
-          </ul> --> */}
           </div>
         </div>
         <ul className="main-navigation">
@@ -512,7 +218,7 @@ function Header() {
             <a
               href="about/index.html"
               data-remote="true"
-              data-targetClassnclassName="somos"
+              data-targetClass="somos"
               data-ajaxUrl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
@@ -523,7 +229,7 @@ function Header() {
             <a
               href="solutions/index.html"
               data-remote="true"
-              data-targetClassnclassName="fazemos"
+              data-targetClass="fazemos"
               data-ajaxUrl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
@@ -538,7 +244,7 @@ function Header() {
             <a
               href="careers/index.html"
               data-remote="true"
-              data-targetClassnclassName="queremos"
+              data-targetClass="queremos"
               data-ajaxUrl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
@@ -549,7 +255,7 @@ function Header() {
             <a
               href="news/index.html"
               data-remote="true"
-              data-targetClassnclassName="noticias"
+              data-targetClass="noticias"
               data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
@@ -560,7 +266,7 @@ function Header() {
             <a
               href="contacts/index.html"
               data-remote="true"
-              data-targetClassnclassName="estamos"
+              data-targetClass="estamos"
               data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
@@ -637,5 +343,4 @@ function Header() {
   );
 }
 
-// Экспорт компонента для использования в других частях приложения
 export default Header;
