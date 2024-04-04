@@ -31,7 +31,7 @@ function Brochure() {
                 value="https://affinity.pt/public/uploads/2023/01/Affinity-Corporate-Brochure-2023-EN.pdf"
               />
               <div className="elastic-input">
-                <label for="email">email address</label>
+                <label htmlFor="email">email address</label>
                 <svg viewBox="0 0 370 76">
                   <path
                     className="morph-bg"
@@ -43,7 +43,7 @@ function Brochure() {
                   type="text"
                   className="email required"
                   name="email"
-                  autocomplete="off"
+                  autoComplete="off"
                 />
                 <span className="error-text">Please insert your email.</span>
               </div>

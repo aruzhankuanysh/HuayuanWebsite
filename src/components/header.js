@@ -10,14 +10,14 @@ function Header() {
       <div className="xxlarge-2 xxlarge-offset-1 medium-offset-0 small-5 xsmall-16 columns">
         <span className="main-logo">
           <a
-            href="https://affinity.pt/en"
+            href="/"
             data-remote="true"
-            data-targetClass="home"
-            data-ajaxUrl="https://affinity.pt/en/ajax/home-ajax/?ajax-id=74"
+            data-targetclass="home"
+            data-ajaxurl="https://affinity.pt/en/ajax/home-ajax/?ajax-id=74"
             data-title-home="Affinity - Nearshore | IT Consulting | Software Development"
             data-title-brand="Brand Guidelines"
             data-url-brand="https://affinity.pt/en/brand-guidelines-2/"
-            data-url-brandAjax="https://affinity.pt/en/ajax/brand-guidelines-ajax/?ajax-id=1175"
+            data-url-brandajax="https://affinity.pt/en/ajax/brand-guidelines-ajax/?ajax-id=1175"
             className="btn-brand-guides"
           >
             <svg viewBox="0 0 1566.1 460.4">
@@ -34,10 +34,10 @@ function Header() {
             data-controller="somos-page"
           >
             <a
-              href="about/index.html"
+              href="/About"
               data-remote="true"
-              data-targetClass="somos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
+              data-targetclass="somos"
+              data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
               About
@@ -49,10 +49,10 @@ function Header() {
             data-controller="fazemos-page"
           >
             <a
-              href="solutions/index.html"
+              href="/Solutions"
               data-remote="true"
-              data-targetClass="fazemos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
+              data-targetclass="fazemos"
+              data-ajaxurl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
               Solutions
@@ -64,10 +64,10 @@ function Header() {
             data-controller="queremos-te-page"
           >
             <a
-              href="careers/index.html"
+              href="/Careers"
               data-remote="true"
-              data-targetClass="queremos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
+              data-targetclass="queremos"
+              data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
               Careers
@@ -79,10 +79,10 @@ function Header() {
             data-controller="noticias-page"
           >
             <a
-              href="news/index.html"
+              href="/News"
               data-remote="true"
-              data-targetClass="noticias"
-              data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
+              data-targetclass="noticias"
+              data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
               News
@@ -94,10 +94,10 @@ function Header() {
             data-controller="estamos-page"
           >
             <a
-              href="contacts/index.html"
+              href="/Contacts"
               data-remote="true"
-              data-targetClass="estamos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
+              data-targetclass="estamos"
+              data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
               Contacts
@@ -147,7 +147,7 @@ function Header() {
                   cy="455.4"
                   rx="553.4"
                   ry="325.3"
-                  clip-path="url(#d)"
+                  clipPath="url(#d)"
                   fill="#3c72eb"
                 />
               </svg>
@@ -190,7 +190,7 @@ function Header() {
                     cy="455.4"
                     rx="553.4"
                     ry="325.3"
-                    clip-path="url(#def)"
+                    clipPath="url(#def)"
                     fill="#ffffff"
                   />
                 </svg>
@@ -206,7 +206,7 @@ function Header() {
             </button>
             <ul className="other-languages">
               <li className="lang-item lang-item-2 lang-item-pt lang-item-first">
-                <a lang="pt-PT" hreflang="pt-PT" href="https://affinity.pt/">
+                <a lang="pt-PT" hrefLang="pt-PT" href="https://affinity.pt/">
                   pt
                 </a>
               </li>
@@ -218,8 +218,8 @@ function Header() {
             <a
               href="about/index.html"
               data-remote="true"
-              data-targetClass="somos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
+              data-targetclass="somos"
+              data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
               About
@@ -229,8 +229,8 @@ function Header() {
             <a
               href="solutions/index.html"
               data-remote="true"
-              data-targetClass="fazemos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
+              data-targetclass="fazemos"
+              data-ajaxurl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
               Solutions
@@ -244,8 +244,8 @@ function Header() {
             <a
               href="careers/index.html"
               data-remote="true"
-              data-targetClass="queremos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
+              data-targetclass="queremos"
+              data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
               Careers
@@ -255,8 +255,8 @@ function Header() {
             <a
               href="news/index.html"
               data-remote="true"
-              data-targetClass="noticias"
-              data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
+              data-targetclass="noticias"
+              data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
               News
@@ -266,8 +266,8 @@ function Header() {
             <a
               href="contacts/index.html"
               data-remote="true"
-              data-targetClass="estamos"
-              data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
+              data-targetclass="estamos"
+              data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
               Contacts

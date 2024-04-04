@@ -5,11 +5,11 @@ import Header from "./components/header";
 function App() {
   return (
     <div className="App">
-      <div className="js-byrefresh js-no-ajax en-lang home">
+      {/* <body className="js-byrefresh js-no-ajax en-lang"> */}
         <div className="home-fullvideos-container">
           <div className="block-bg-cover full-video">
             <video className="element-cover">
-              <source src="index.html" type="video/mp4" />
+              <source src="App.js" type="video/mp4" />
             </video>
           </div>
           <button className="elastic-btn">
@@ -34,7 +34,7 @@ function App() {
           <div className="page-main page-current">
             <div
               className="page-toload home-page"
-              data-bodyClass="home"
+              data-bodyclass="home"
             >
               <header className="page-header">
                 <h1 style={{ pointerEvents: "none", position: "absolute" }}>
@@ -44,12 +44,12 @@ function App() {
                 <div className="background-wrapper">
                   <div className="video-event-container">
                     <div className="video-block block-bg-cover people-teaser">
-                      <video muted loop autoplay playsinline className="element-cover" poster="App.js">
+                      <video muted loop autoPlay playsInline className="element-cover" poster="App.js">
                         <source src="/video/people-teaser.mp4" type="video/mp4"/>
                       </video>
                     </div>
                     <div className="video-block block-bg-cover business-teaser">
-                      <video muted loop playsinline className="element-cover" poster="App.js">
+                      <video muted loop playsInline className="element-cover" poster="App.js">
                         <source src="/video/business-teaser.mp4" type="video/mp4"/>
                       </video>
                     </div>
@@ -147,12 +147,12 @@ function App() {
                   </p>
                   <a
                     href="contacts/index.html"
-                    data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
+                    data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
                     data-remote="true"
-                    data-targetClass="estamos"
+                    data-targetclass="estamos"
                     className="elastic-btn anchor"
                   >
-                    <svg viewBox="0 0 164 69" preserveAspectRatio>
+                    <svg viewBox="0 0 164 69" preserveAspectRatio="xMidYMid meet">
                       <path
                         className="morph-bg"
                         d="M3.2 37.3C5.1 63.2 20.8 67 41.5 67h89c20.8-.1 30.4-14.7 30.4-32.5S151.3 2.1 130.6 2h-89C19 2 1.2 9.5 3.2 37.3z"
@@ -176,8 +176,8 @@ function App() {
                           <a
                             href="solutions/nearshore/index.html"
                             data-remote="true"
-                            data-targetClass="single-service"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/nearshoring-ajax/?ajax-id=76"
+                            data-targetclass="single-service"
+                            data-ajaxurl="https://affinity.pt/en/ajax/nearshoring-ajax/?ajax-id=76"
                             data-title="Nearshore"
                           >
                             <img src="/imgs/home/nearshoring.png" alt="" />
@@ -193,8 +193,8 @@ function App() {
                           <a
                             href="solutions/outsourcing/index.html"
                             data-remote="true"
-                            data-targetClass="single-service"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/outsourcing-ajax/?ajax-id=78"
+                            data-targetclass="single-service"
+                            data-ajaxurl="https://affinity.pt/en/ajax/outsourcing-ajax/?ajax-id=78"
                             data-title="Outsourcing"
                           >
                             <img src="/imgs/home/outsourcing.png" alt="" />
@@ -210,8 +210,8 @@ function App() {
                           <a
                             href="solutions/software/index.html"
                             data-remote="true"
-                            data-targetClass="single-service"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/software-ajax/?ajax-id=80"
+                            data-targetclass="single-service"
+                            data-ajaxurl="https://affinity.pt/en/ajax/software-ajax/?ajax-id=80"
                             data-title="Software"
                           >
                             <img src="/imgs/home/software.png" alt="" />
@@ -554,7 +554,7 @@ function App() {
                     <div className="xxlarge-4 xxlarge-offset-3 medium-6 medium-offset-1 xsmall-14 columns meta-title-wrapper">
                       <div
                         className="morphing-letter"
-                        data-morphPath="M221.2,362.4C-40,422.8,187.3,781.7,478.7,711.5C770.9,641,751.9,65.9,533.4,31.6 C297.2-5.6,414.4,317.7,221.2,362.4z"
+                        data-morphpath="M221.2,362.4C-40,422.8,187.3,781.7,478.7,711.5C770.9,641,751.9,65.9,533.4,31.6 C297.2-5.6,414.4,317.7,221.2,362.4z"
                       >
                         <svg viewBox="0 0 800 750">
                           <defs>
@@ -588,10 +588,10 @@ function App() {
                               id="jobText"
                               x="560"
                               y="348"
-                              font-size="100"
-                              letter-spacing="-4px"
-                              font-weight="bold"
-                              text-anchor="middle"
+                              fontSize="100"
+                              letterSpacing="-4px"
+                              fontWeight="bold"
+                              textAnchor="middle"
                             >
                               Job Offers{" "}
                             </text>
@@ -641,7 +641,7 @@ function App() {
 						<a href="https://affinity.pt/en/careers/1487/"
 							 className="view-all"
 							 data-remote="true"
-							 data-targetClassnclassName="queremos"
+							 data-targetclass="queremos"
            		 data-title="Careers"
 							>View all <span className="quantity">(1)</span></a>
 					</div>  */}
@@ -655,7 +655,7 @@ function App() {
                  	rel="noreferrer"
                 >
                 	<div className="job-wrapper block-wrapper" data-target="spontaneous">
-                  		<h2>Can't wait <br>to see the <strong style="font-weight:bold;">offers?</strong></h2>
+                  		<h2>Can't wait <br>to see the <strong style="fontWeight:bold;">offers?</strong></h2>
                   		<h4>Click here and send us a spontaneous application.</h4>
                 	</div>
               	</a>  */}
@@ -667,7 +667,7 @@ function App() {
                  	>
                  	<div className="job-wrapper block-wrapper" data-target="it-consultant">
                   		<h3 className="post-time">Updated daily</h3>
-                  		<h2 style="font-weight:normal;">Click here to see<br>the <strong style="font-weight:bold;">available offers.</strong></h2>
+                  		<h2 style="fontWeight:normal;">Click here to see<br>the <strong style="fontWeight:bold;">available offers.</strong></h2>
                   		<h4 className="post-local">
                     		<span>
 								<svg viewBox="0 0 12 15.5">
@@ -731,7 +731,7 @@ function App() {
                     <div className="xxlarge-4 xxlarge-offset-3 medium-6 medium-offset-1 xsmall-14 columns meta-title-wrapper">
                       <div
                         className="morphing-letter"
-                        data-morphPath="M339.9,619.2c84,42.6,173.5,71.4,262.3,73.8c168.2,4.7,228.1-440.7,146.4-577.4 c-94-157.3-197.2,65.8-273.2,38c-79.8-29.2-223.9-142.1-344.5-64.7C8.5,167.6-20.2,630,153.4,674.8C255.1,701,262.5,580,339.9,619.2z"
+                        data-morphpath="M339.9,619.2c84,42.6,173.5,71.4,262.3,73.8c168.2,4.7,228.1-440.7,146.4-577.4 c-94-157.3-197.2,65.8-273.2,38c-79.8-29.2-223.9-142.1-344.5-64.7C8.5,167.6-20.2,630,153.4,674.8C255.1,701,262.5,580,339.9,619.2z"
                       >
                         <svg viewBox="0 0 800 750">
                           <defs>
@@ -765,10 +765,10 @@ function App() {
                               id="newsText"
                               x="660"
                               y="348"
-                              font-size="100"
-                              letter-spacing="-4px"
-                              font-weight="bold"
-                              text-anchor="middle"
+                              fontSize="100"
+                              letterSpacing="-4px"
+                              fontWeight="bold"
+                              textAnchor="middle"
                             >
                               News & Events{" "}
                             </text>
@@ -804,8 +804,8 @@ function App() {
                         href="news/index.html"
                         className="view-all"
                         data-remote="true"
-                        data-targetClassnclassName="noticias"
-                        data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
+                        data-targetclass="noticias"
+                        data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
                         data-title=""
                       >
                         View all{" "}
@@ -820,8 +820,8 @@ function App() {
                             className="news-link"
                             href="news/a-data-driven-world-in-discussion-in-our-upcoming-affinity-live-event/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-noticias"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
+                            data-targetclass="single-noticias"
+                            data-ajaxurl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
                             data-title=""
                           >
                             <div className="news-wrapper">
@@ -853,8 +853,8 @@ function App() {
                             className="news-link"
                             href="news/affinity-supports-the-child-care-association-casa-de-apoio-a-crianca-de-guimaraes/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-noticias"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
+                            data-targetclass="single-noticias"
+                            data-ajaxurl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
                             data-title=""
                           >
                             <div className="news-wrapper">
@@ -888,8 +888,8 @@ function App() {
                             className="news-link"
                             href="news/blog-with-affinity-is-sharing-knowledge/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-noticias"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
+                            data-targetclass="single-noticias"
+                            data-ajaxurl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
                             data-title=""
                           >
                             <div className="news-wrapper">
@@ -923,8 +923,8 @@ function App() {
                             className="news-link"
                             href="news/achieved-the-goal-of-100k-followers-on-linkedin/index.html"
                             data-remote="true"
-                            data-targetClassnclassName="single-noticias"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
+                            data-targetclass="single-noticias"
+                            data-ajaxurl="https://affinity.pt/en/ajax/single-noticias-ajax/?ajax-id=https://affinity.pt"
                             data-title=""
                           >
                             <div className="news-wrapper">
@@ -1017,8 +1017,8 @@ function App() {
                             href="news/index.html"
                             className="underline-link"
                             data-remote="true"
-                            data-targetClassnclassName="noticias"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
+                            data-targetclass="noticias"
+                            data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
                             data-title=""
                           >
                             News
@@ -1029,8 +1029,8 @@ function App() {
                             href="contacts/index.html#affinity"
                             className="underline-link"
                             data-remote="true"
-                            data-targetClassnclassName="estamos"
-                            data-ajaxUrl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
+                            data-targetclass="estamos"
+                            data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
                             data-title="Contacts"
                           >
                             Contacts
@@ -1240,7 +1240,7 @@ function App() {
             </a>
           </p>
         </div>
-      </div>
+      {/* </body> */}
     </div>
   );
 }
