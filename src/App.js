@@ -5,7 +5,7 @@ import Header from "./components/header";
 function App() {
   return (
     <div className="App">
-      {/* <body className="js-byrefresh js-no-ajax en-lang"> */}
+      <body className="js-byrefresh js-no-ajax en-lang">
         <div className="home-fullvideos-container">
           <div className="block-bg-cover full-video">
             <video className="element-cover">
@@ -1240,7 +1240,7 @@ function App() {
             </a>
           </p>
         </div>
-      {/* </body> */}
+      </body>
     </div>
   );
 }

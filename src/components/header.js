@@ -216,7 +216,7 @@ function Header() {
         <ul className="main-navigation">
           <li className="" data-color="#7245ce" data-controller="somos-page">
             <a
-              href="about/index.html"
+              href="/About"
               data-remote="true"
               data-targetclass="somos"
               data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
@@ -242,7 +242,7 @@ function Header() {
             data-controller="queremos-te-page"
           >
             <a
-              href="careers/index.html"
+              href="/Careers"
               data-remote="true"
               data-targetclass="queremos"
               data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
@@ -253,7 +253,7 @@ function Header() {
           </li>
           <li data-controller="noticias-page">
             <a
-              href="news/index.html"
+              href="/News"
               data-remote="true"
               data-targetclass="noticias"
               data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
@@ -264,7 +264,7 @@ function Header() {
           </li>
           <li className="" data-color="#f77b81" data-controller="estamos-page">
             <a
-              href="contacts/index.html"
+              href="/Contacts"
               data-remote="true"
               data-targetclass="estamos"
               data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
