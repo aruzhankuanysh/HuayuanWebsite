@@ -13,6 +13,7 @@ import ErrorPage from './ErrorPage';
 import NearshorePage from './pages/solutions/NearshorePage'
 import OutsourcingPage from './pages/solutions/OutsourcingPage'
 import SoftwarePage from './pages/solutions/SoftwarePage'
+import PrivacyPage from './pages/PrivPolicyPage';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/Software",
     element: <SoftwarePage />,
+  },
+  {
+    path: "/PrivacyPolicy",
+    element: <PrivacyPage />,
   },
 ]);
 

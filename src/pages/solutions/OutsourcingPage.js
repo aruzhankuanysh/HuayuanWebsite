@@ -1,4 +1,7 @@
+import MorphPage from "../../components/MorphPage";
+import Transition from "../../components/Transition";
 import Header from "../../components/header";
+import Navbar from "./Navbar";
 
 function OutsourcingPage() {
   return (
@@ -262,7 +265,10 @@ function OutsourcingPage() {
                                   className="full"
                                   d="M1.1 18.4C2 31.1 9.2 32.9 18.8 32.9S33 25.8 33 17 28.4 1.1 18.8 1.1C8.4 1.1.2 4.8 1.1 18.4z"
                                 />
-                                <path className="dash" d="M9.7 17l5.9 5 8.1-12.1" />
+                                <path
+                                  className="dash"
+                                  d="M9.7 17l5.9 5 8.1-12.1"
+                                />
                               </svg>
                               <span className="option">Oporto</span>
                             </li>
@@ -276,7 +282,10 @@ function OutsourcingPage() {
                                   className="full"
                                   d="M1.1 18.4C2 31.1 9.2 32.9 18.8 32.9S33 25.8 33 17 28.4 1.1 18.8 1.1C8.4 1.1.2 4.8 1.1 18.4z"
                                 />
-                                <path className="dash" d="M9.7 17l5.9 5 8.1-12.1" />
+                                <path
+                                  className="dash"
+                                  d="M9.7 17l5.9 5 8.1-12.1"
+                                />
                               </svg>
                               <span className="option">Lisbon</span>
                             </li>
@@ -290,7 +299,10 @@ function OutsourcingPage() {
                                   className="full"
                                   d="M1.1 18.4C2 31.1 9.2 32.9 18.8 32.9S33 25.8 33 17 28.4 1.1 18.8 1.1C8.4 1.1.2 4.8 1.1 18.4z"
                                 />
-                                <path className="dash" d="M9.7 17l5.9 5 8.1-12.1" />
+                                <path
+                                  className="dash"
+                                  d="M9.7 17l5.9 5 8.1-12.1"
+                                />
                               </svg>
                               <span className="option">Leiria</span>
                             </li>
@@ -367,80 +379,7 @@ function OutsourcingPage() {
                   {/*.start-project */}
                 </div>
 
-                <div className="navbar-services-wrapper">
-                  <div className="row align-center">
-                    <div className="xxlarge-16">
-                      <div className="row align-center">
-                        <div className="xxlarge-12 medium-14 small-16">
-                          <div className="navbar-services-scroll">
-                            <ul className="navbar-services row xxlarge-up-3  outsourcing-active">
-                              <li className="column active">
-                                <a
-                                  href="../nearshore/index.html"
-                                  data-remote="true"
-                                  data-targetClass="single-service"
-                                  data-title="Nearshore"
-                                >
-                                  <svg
-                                    className="nearshoring-picto"
-                                    viewBox="0 0 112 98"
-                                  >
-                                    <path
-                                      className="st0"
-                                      d="M48.4 79.9c12.2 5.8 22.3 13.8 35 13.8 24.1 0 30.9-62.6 18.6-81.8-14.1-22.1-25.1 10.9-36.1 7.2-11.5-3.9-31.2-21.6-48.2-10C.6 20.9-3.1 87.2 21.9 92.9c14.7 3.4 15.2-18.3 26.5-13z"
-                                    />
-                                  </svg>
-
-                                  <span>Nearshore </span>
-                                </a>
-                              </li>
-                              <li className="column">
-                                <a
-                                  href="index.html"
-                                  data-remote="true"
-                                  data-targetClass="single-service"
-                                  data-title="Outsourcing"
-                                >
-                                  <svg
-                                    className="outsourcing-picto"
-                                    viewBox="0 0 112 102"
-                                  >
-                                    <path
-                                      className="st0"
-                                      d="M6.2 55C9 92.5 31.5 98 61.7 98c30.1.1 44.3-21 44.3-47S91.8 4 61.7 3.9C29.1 3.9 3.3 14.8 6.2 55z"
-                                    />
-                                  </svg>
-
-                                  <span>Outsourcing </span>
-                                </a>
-                              </li>
-                              <li className="column">
-                                <a
-                                  href="../software/index.html"
-                                  data-remote="true"
-                                  data-targetClass="single-service"
-                                  data-title="Software"
-                                >
-                                  <svg
-                                    className="software-picto"
-                                    viewBox="0 0 112 112"
-                                  >
-                                    <path
-                                      className="st0"
-                                      d="M48.2 107c-5.2 0-10.2-.4-14.7-1.1-6.4-1-11.6-2.6-15.4-4.9-5.6-3.3-8.5-6.9-9-11-.7-6 4.3-11 8.7-15.3 3.1-3.1 6.7-6.6 6-8.5-.9-2.4-2.7-5.5-4.6-8.8-3.1-5.3-6.5-11.3-8.2-17.7-1-3.7-1.2-7-.8-10.3.5-3.7 1.9-7.2 4.2-10.4 5.5-7.6 19-11 26.6-12.3 12.2-2.2 25.4-2.2 36.3-.1 6.4 1.3 11.7 3.2 15.8 5.8 4.9 3.1 7.9 7 9 11.6 1 4 .3 7.6-2 10.8-1.8 2.6-4.4 4.5-6.7 6.1-4.8 3.5-5.4 4.5-4.3 6.7 1.5 2.9 3.1 5.7 4.7 8.5 4.7 8.1 9.2 15.7 9.2 25.1 0 4.5-2.1 11.1-12 16.7-9.1 5.1-22.9 8.4-37.9 9-1.7.1-3.3.1-4.9.1z"
-                                    />
-                                  </svg>
-
-                                  <span>Software </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Navbar />
 
                 <section className="introduction">
                   <div className="hero-text row text-center align-center small-collapse">
@@ -468,10 +407,7 @@ function OutsourcingPage() {
                   <div className="row expanded image-wrapper">
                     <div className="xxlarge-13 xxlarge-offset-3 small-16 small-offset-0">
                       <picture>
-                        <img
-                          src="../uploads/2020/04/DSC_2192.jpg"
-                          alt=""
-                        />
+                        <img src="../uploads/2020/04/DSC_2192.jpg" alt="" />
                       </picture>
 
                       <div className="offset-text row">
@@ -499,7 +435,9 @@ function OutsourcingPage() {
                 <section className="why-portugal question-list js-height ">
                   <div className="row expanded">
                     <div className="xxlarge-5 xxlarge-offset-3 medium-offset-2 small-12 small-offset-1 xsmall-14 columns">
-                      <h2 className="js-title-element">Why Outsourcing with us?</h2>
+                      <h2 className="js-title-element">
+                        Why Outsourcing with us?
+                      </h2>
                       <p className="js-text-element">
                         National coverage with offices in Lisbon, Porto and
                         Obidos. Our HR Team is comprised of exceptional IT
@@ -628,239 +566,6 @@ function OutsourcingPage() {
                   </div>
                 </section>
                 {/*why-portugal*/}
-
-                <section className="technologies js-hashtag-scroll">
-                  <div className="row align-center">
-                    <div className="xxlarge-12 small-13 xsmall-14 text-center">
-                      <h2 className="hashtag-title js-write-text">#technologies</h2>
-                    </div>
-                  </div>
-                  <div className="row align-center">
-                    <ul className="xxlarge-12 row xxlarge-up-5 medium-13 small-14 xsmall-16 medium-up-3 small-up-2">
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/java-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/java.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/c_mais_mais-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/c_mais_mais.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/php-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/php.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/js-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/js.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/python-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/python.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/dot_net-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/dot_net.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/perl-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/perl.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/oracle-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/oracle.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/css-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/css.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/rails-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/rails.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/c_cardinali-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/c_cardinali.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/c_cardinali-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/scala.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/scala-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/ionic.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/html-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/html.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/jquery-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/jquery.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/object_c-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/object_c.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/ext_js-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/ext_js.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/node-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/node.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/angular-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/angular.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                      <li
-                        className="column"
-                        data-hover="https://affinity.pt/uploads/2018/10/knockout-1.png"
-                      >
-                        <div className="wrapper">
-                          <img
-                            src="../uploads/2018/10/knockout.png"
-                            alt=""
-                          />
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                {/*technologies-logos*/}
 
                 <section className="technologies-list js-height">
                   <div className="row align-center hashtag-wrapper">
@@ -1005,7 +710,9 @@ function OutsourcingPage() {
                                 </g>
                               </svg>
                             </p>
-                            <span className="title">RPA, AI, Machine Learning</span>
+                            <span className="title">
+                              RPA, AI, Machine Learning
+                            </span>
                             <ul role="list">
                               <li>UiPath</li>
                               <li>Blue Prism</li>
@@ -1024,7 +731,9 @@ function OutsourcingPage() {
                                 <path d="M61.96 14.93a389.92 389.92 0 00-51.44 28.65c-3.88 2.64-5.93 7.26-6.3 11.94a426.23 426.23 0 00.06 50.67 17.1 17.1 0 006.68 12.31c11.73 9 36.44 26.27 50.56 35.35a17.08 17.08 0 0018.42 0c14.2-9.07 38.94-26.47 50.61-35.46a17.2 17.2 0 006.64-12.22c1.08-13.18 1.31-37.24.11-50.56-.42-4.65-2.51-9.18-6.36-11.81a379.7 379.7 0 00-51.1-28.91 21.1 21.1 0 00-17.88.04z" />
                               </svg>
                             </p>
-                            <span className="title">System & Infrastructures</span>
+                            <span className="title">
+                              System & Infrastructures
+                            </span>
                             <ul role="list">
                               <li>Windows</li>
                               <li>Unix</li>
@@ -1588,10 +1297,7 @@ function OutsourcingPage() {
                     src="../imgs/outsourcing/outsourcing-header.jpg"
                     alt=""
                   />
-                  <img
-                    src="../imgs/alphabeth_3d/headerO.png"
-                    alt=""
-                  />
+                  <img src="../imgs/alphabeth_3d/headerO.png" alt="" />
                   <img
                     src="../imgs/outsourcing/outsourcing-suricata.png"
                     alt=""
@@ -1601,153 +1307,19 @@ function OutsourcingPage() {
             </div>
           </div>
 
-          <div className="page-main page-next" aria-hidden="true"></div>
-          <div className="page-main page-prev" aria-hidden="true"></div>
-
-          <footer className="footer" role="contentinfo"></footer>
-
-          <div className="morph-page-transition">
-            <svg
-              height="0"
-              width="0"
-              viewBox="0 0 745 642"
-              data-morph-shape="M375.037-185.216
-  C445.836-110.882,494.822,68.567,546.3,84.908c55.24,17.535,94.958-280.124,150.737-280.124c154.47,0,227.3-142.07,180-234
-  c-87.387-169.843-395.272-56.301-465-29.311c-72.787,28.173-353,0-353,0S3.35,122.51,163.764,159.166
-  C257.744,180.641,320.073-242.925,375.037-185.216z"
-            >
-              <defs>
-                <clipPath
-                  id="hero-clip"
-                  clipPathUnits="objectBoundingBox"
-                  transform="scale(0.002013 0.002336)"
-                >
-                  <path
-                    fill="none"
-                    transform="translate(-100 -95)"
-                    d="M217.06,703.311l316,4l254,91l34-769L356.06,0
-  c-6,0-353,0-353,0l-25,654.311L217.06,703.311z"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-
-          <div className="bg-transition">
-            <div className="row align-middle align-center">
-              <div className="xxlarge-16 text-center">
-                <h2 className="hashtag-title">#alifetimeexperience</h2>
-              </div>
-            </div>
-          </div>
+          <MorphPage />
         </div>
-        {/*scroll-content-wrapper*/}
 
-        <div
-          className="bg-transition-new"
-          data-phrases='[{"phrase":"We are united by Affinity."},{"phrase":"We grow pure Affinity."},{"phrase":"Great technology is always based on optimal relationships."},{"phrase":"We believe feedback loops to great things."},{"phrase":"Learning is a precondition."},{"phrase":"Affinity means cutting distance."}]'
-        >
-          <svg
-            className="main-transition"
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M459.06-656.689c-27.047-28.397-9.875-222.002-87.5-222 c-64.765,0.001-112.618,263.421-167.5,246C124.063-658.085,84.261-849.133,3.481-849.133 c-223.695,0-177.919,469.313-109.421,602.444c126.552,245.958,363.025,42.085,464,3c105.408-40.8,358.055,223.438,488,87 c91.376-95.944,123.897-654.729-108.408-707.813C601.554-895.601,538.656-573.118,459.06-656.689z"
-              data-morph="M459.06-32.689c-27.047-28.397-9.875-222.002-87.5-222-64.765.001-112.618 263.421-167.5 246C124.063-34.085 84.261-225.133 3.481-225.133c-223.695 0-108.867 775.767-40.37 908.897 126.552 245.958 300.779 3.814 401.753-35.271 105.408-40.8 260.959 201.682 390.905 65.244 91.376-95.944 214.188-901.156-18.118-954.24C601.554-271.601 538.656 50.882 459.06-32.689z"
-              d="M422.061,740.244c-74.299-1.895-117.785,2.909-169.262,0.451 c-55.241-2.638-84.958-1.053-140.738-1.053c-154.469,0-74.875,54.419-27.575,68.248c87.387,25.548,207.696,0.396,277.422-3.664 c72.787-4.238,180.201,20.949,269.931,6.777c63.102-9.966,151.909-64.788-8.505-70.302 C529.354,737.471,477.023,748.924,422.061,740.244z"
-            />
-          </svg>
-
-          {/*first transition*/}
-          <svg
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M459.06-656.689c-27.047-28.397-9.875-222.002-87.5-222 c-64.765,0.001-112.618,263.421-167.5,246C124.063-658.085,84.261-849.133,3.481-849.133 c-223.695,0-177.919,469.313-109.421,602.444c126.552,245.958,363.025,42.085,464,3c105.408-40.8,358.055,223.438,488,87 c91.376-95.944,123.897-654.729-108.408-707.813C601.554-895.601,538.656-573.118,459.06-656.689z"
-              data-morph="M459.06-32.689c-27.047-28.397-9.875-222.002-87.5-222-64.765.001-112.618 263.421-167.5 246C124.063-34.085 84.261-225.133 3.481-225.133c-223.695 0-108.867 775.767-40.37 908.897 126.552 245.958 300.779 3.814 401.753-35.271 105.408-40.8 260.959 201.682 390.905 65.244 91.376-95.944 214.188-901.156-18.118-954.24C601.554-271.601 538.656 50.882 459.06-32.689z"
-              d="M422.061,740.244c-74.299-1.895-117.785,2.909-169.262,0.451 c-55.241-2.638-84.958-1.053-140.738-1.053c-154.469,0-74.875,54.419-27.575,68.248c87.387,25.548,207.696,0.396,277.422-3.664 c72.787-4.238,180.201,20.949,269.931,6.777c63.102-9.966,151.909-64.788-8.505-70.302 C529.354,737.471,477.023,748.924,422.061,740.244z"
-            />
-          </svg>
-          {/*second transition*/}
-          <svg
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M780.181-370.628c19.212,258.323,175.002,296.32,383.075,296.32 c208.055,0,305.976-145.067,305.976-324.042c0-178.957-97.921-323.715-305.976-324.025 C938.238-722.705,759.573-647.66,780.181-370.628z"
-              data-morph="M-154.226,291.049c30.227,406.434,275.339,466.217,602.713,466.217 c327.344,0,481.408-228.242,481.408-509.834c0-281.562-154.064-509.318-481.408-509.807 C94.454-262.893-186.649-144.82-154.226,291.049z"
-              d="M-44.3,659.339c0.968,13.013,8.815,14.927,19.297,14.927c10.48,0,15.413-7.308,15.413-16.323 c0-9.015-4.933-16.307-15.413-16.322C-36.338,641.604-45.338,645.384-44.3,659.339z"
-            />
-          </svg>
-
-          {/*third transition*/}
-          <svg
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M371.568-224.691c0.091,1.264,0.862,1.454,1.884,1.454c1.023,0,1.503-0.716,1.503-1.594 s-0.477-1.594-1.507-1.594C372.346-226.424,371.463-226.06,371.568-224.691z"
-              data-morph="M-7.551,309.623C4.429,470.706-170.027,617.647-54.458,733.217 c115.57,115.576,246.188-70.883,427.626-70.883c149.306,0,300.822,145.093,420.11,54.683 c119.287-90.412-26.455-270.181-26.455-409.41c0-132.685,141.7-266.949,26.455-382.194 C678.033-189.834,535.896-44.222,378.977-44.457C186.539-44.74,60.797-211.088-53.793-77.391 C-168.391,56.306-20.746,132.219-7.551,309.623z"
-              d="M370.864,663.214c0.037,0.521,0.355,0.599,0.775,0.599c0.422,0,0.619-0.295,0.619-0.656 s-0.195-0.656-0.62-0.656C371.185,662.5,370.821,662.651,370.864,663.214z"
-            />
-          </svg>
-
-          {/*forth transition*/}
-          <svg
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M809.467,682.788c-2.488-6.945-3.269-13.953-8.189-18.873c-9.32-9.32-36.141,12.246-38.847,24.424 c-3.114,14.012,13.934,5.484,16.761,11.158c2.971,5.961,3.711,20.417,14.746,22.501c11.2,2.116,38.263-22.104,30.795-33.995 C820.358,681.037,811.762,689.19,809.467,682.788z"
-              data-morph="M288.317,656.372c135.07,63.832,246.579,152.996,387.493,152.976 c266.896,0,342.119-692.812,206.525-905.912C726.294-341.788,604.284,24.406,482.573-16.349 C354.69-59.171,137.101-255.552-50.738-127.383C-241.414,2.684-282.1,736.973-4.92,800.291 C157.469,837.407,163.806,597.582,288.317,656.372z"
-              d="M-61.345-40.169c2.489,6.945,3.269,13.953,8.189,18.874c9.32,9.32,36.141-12.247,38.847-24.425 c3.114-14.011-13.934-5.484-16.761-11.157c-2.971-5.961-3.71-20.417-14.745-22.501c-11.201-2.116-38.263,22.104-30.796,33.995 C-72.236-38.418-63.639-46.57-61.345-40.169zz"
-            />
-          </svg>
-
-          {/*fifth transition*/}
-          <svg
-            viewBox="0 0 743 642"
-            preserveAspectRatio="xMidYMin slice"
-            data-timing="2"
-          >
-            <path
-              fill="#006CFF"
-              data-final-morph="M781.427,1066.452c-19.478,73.32-205.87,84.432-415.146,81.754 c-203.365-2.604-397.79-16.628-397.79-70.604c0-68.006,143.306-100.16,177.667-147.69c79.267-109.66,41.589-204.92,214.053-204.92 c172.468,0,151.724,107.973,242.075,204.92C652.272,983.548,797.263,1006.835,781.427,1066.452z"
-              data-morph="M-520.978-194.252c43.025-291.214,454.755-335.352,917.034-324.716 c449.225,10.338,878.698,66.045,878.698,280.432c0,270.111-316.555,397.823-392.456,586.612 c-175.098,435.556-91.868,813.919-472.832,813.919c-380.972,0-335.151-428.856-534.732-813.919 C-235.684,135.037-555.963,42.547-520.978-194.252z"
-              d="M57.725-143.727c15.253-18.961,161.217-21.835,325.101-21.143 c159.256,0.673,311.51,4.3,311.51,18.259c0,17.587-112.223,25.903-139.131,38.195C493.131-80.056,522.636-55.42,387.58-55.42 c-135.06,0-118.815-27.923-189.569-52.995C158.866-122.286,45.323-128.308,57.725-143.727z"
-            />
-          </svg>
-
-          <div className="row align-middle align-center">
-            <div className="xxlarge-16 text-center">
-              <h2 className="hashtag-title">#alifetimeexperience</h2>
-            </div>
-          </div>
-        </div>
-        {/*Loading Blob */}
-        {/* <div className="loading-blob">
-  <svg viewBox="0 0 62 58">
-    <path d="M0,32.45C0,14.12,3.5,3.12,23.17.45c23.33-2.33,38.33,4,38.67,26.17C61.67,50,51,58.12,31.33,58.12S0,48,0,32.45Z" data-morph="M6.44,24.66C25.78,14,.44,3,20.11.32c23.33-2.33,53.76,17,34,26.5C28.44,39.16,47.94,58,28.28,58S-7.13,32.15,6.44,24.66Z"></path>
-  </svg>
-</div> */}
+        <Transition />
 
         {/* MODAL */}
         <div id="modal-bg"></div>
         <div id="modal-wrapper">
           {" "}
-          <div id="modal-content" className="row align-middle align-center"></div>
+          <div
+            id="modal-content"
+            className="row align-middle align-center"
+          ></div>
         </div>
         {/* TRANSITION */}
         <div id="loading-page" aria-hidden="true"></div>
@@ -1766,8 +1338,6 @@ function OutsourcingPage() {
               &times;
             </a>
           </p>
-          {/* end #outdated browser  */}
-          {/*  */}
         </div>
       </body>
     </>
