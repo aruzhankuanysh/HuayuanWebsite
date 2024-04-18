@@ -17,11 +17,11 @@ function ContactsPage() {
                   <picture>
                     {/*  <source srcset="" type="image/webp"> */}
                     <source
-                      srcset="/imgs/estamos/contacts-header-image-phone.jpg"
+                      srcset="./imgs/estamos/contacts-header-image-phone.jpg"
                       media="(max-width: 414px)"
                     />
                     <source
-                      srcset="/imgs/estamos/contacts-header-image-small.jpg"
+                      srcset="./imgs/estamos/contacts-header-image-small.jpg"
                       media="(max-width: 768px)"
                     />
                     <img
@@ -36,7 +36,7 @@ function ContactsPage() {
               <div className="header-pictogram-wrapper">
                 <picture>
                   <source
-                    srcset="/imgs/estamos/contacts-pictogram-phone.png"
+                    srcset="./imgs/estamos/contacts-pictogram-phone.png"
                     media="(max-width: 414px)"
                   />
                   <img
@@ -984,7 +984,7 @@ function ContactsPage() {
                       <image
                         width="1451"
                         height="1349"
-                        href="/imgs/somos/footer-letters/W_shadow.png"
+                        href="./imgs/somos/footer-letters/W_shadow.png"
                         transform="translate(-370.5 -339.5)"
                         overflow="visible"
                         opacity=".25"
@@ -1000,7 +1000,7 @@ function ContactsPage() {
                       <image
                         width="1326"
                         height="1366"
-                        href="/imgs/somos/footer-letters/E_shadow.png"
+                        href="./imgs/somos/footer-letters/E_shadow.png"
                         transform="translate(-368.094 -348)"
                         overflow="visible"
                         opacity=".25"
@@ -1016,7 +1016,7 @@ function ContactsPage() {
                       <image
                         width="1453"
                         height="1344"
-                        href="/imgs/somos/footer-letters/A_shadow.png"
+                        href="./imgs/somos/footer-letters/A_shadow.png"
                         transform="translate(-366.5 -337.5)"
                         overflow="visible"
                         opacity=".25"
@@ -1032,7 +1032,7 @@ function ContactsPage() {
                       <image
                         width="1350"
                         height="1361"
-                        href="/imgs/somos/footer-letters/R_shadow.png"
+                        href="./imgs/somos/footer-letters/R_shadow.png"
                         transform="translate(-364.944 -335.568)"
                         overflow="visible"
                         opacity=".25"
@@ -1048,7 +1048,7 @@ function ContactsPage() {
                       <image
                         width="1326"
                         height="1366"
-                        href="/imgs/somos/footer-letters/E_shadow.png"
+                        href="./imgs/somos/footer-letters/E_shadow.png"
                         transform="translate(-368.094 -348)"
                         overflow="visible"
                         opacity=".25"

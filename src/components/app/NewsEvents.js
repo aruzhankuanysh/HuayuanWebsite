@@ -101,7 +101,7 @@ function NewsEvents() {
                     <picture>
                       <img
                         className="element-cover"
-                        src="/uploads/2023/08/MicrosoftTeams-image-40-1000x554.png"
+                        src="./uploads/2023/08/MicrosoftTeams-image-40-1000x554.png"
                         alt=""
                       />
                     </picture>
@@ -133,7 +133,7 @@ function NewsEvents() {
                     <picture>
                       <img
                         className="element-cover"
-                        src="/uploads/2023/08/DSC_9747-1000x665.jpg"
+                        src="./uploads/2023/08/DSC_9747-1000x665.jpg"
                         alt=""
                       />
                     </picture>
@@ -166,7 +166,7 @@ function NewsEvents() {
                     <picture>
                       <img
                         className="element-cover"
-                        src="/uploads/2023/07/DSC_2337-1-1000x665.jpg"
+                        src="./uploads/2023/07/DSC_2337-1-1000x665.jpg"
                         alt=""
                       />
                     </picture>
@@ -196,7 +196,7 @@ function NewsEvents() {
                     <picture>
                       <img
                         className="element-cover"
-                        src="/uploads/2023/07/MicrosoftTeams-image-19-1000x523.png"
+                        src="./uploads/2023/07/MicrosoftTeams-image-19-1000x523.png"
                         alt=""
                       />
                     </picture>

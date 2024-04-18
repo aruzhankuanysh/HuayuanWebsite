@@ -10,7 +10,7 @@ function RollingLetters() {
             <image
               width="1451"
               height="1349"
-              href="/imgs/somos/footer-letters/W_shadow.png"
+              href="./imgs/somos/footer-letters/W_shadow.png"
               transform="translate(-370.5 -339.5)"
               overflow="visible"
               opacity=".25"
@@ -23,7 +23,7 @@ function RollingLetters() {
             <image
               width="1326"
               height="1366"
-              href="/imgs/somos/footer-letters/E_shadow.png"
+              href="./imgs/somos/footer-letters/E_shadow.png"
               transform="translate(-368.094 -348)"
               overflow="visible"
               opacity=".25"
@@ -36,7 +36,7 @@ function RollingLetters() {
             <image
               width="1451"
               height="1349"
-              href="/imgs/somos/footer-letters/W_shadow.png"
+              href="./imgs/somos/footer-letters/W_shadow.png"
               transform="translate(-370.5 -339.5)"
               overflow="visible"
               opacity=".25"
@@ -49,7 +49,7 @@ function RollingLetters() {
             <image
               width="1453"
               height="1344"
-              href="/imgs/somos/footer-letters/A_shadow.png"
+              href="./imgs/somos/footer-letters/A_shadow.png"
               transform="translate(-366.5 -337.5)"
               overflow="visible"
               opacity=".25"
@@ -62,7 +62,7 @@ function RollingLetters() {
             <image
               width="1445"
               height="1348"
-              href="/imgs/somos/footer-letters/N_shadow.png"
+              href="./imgs/somos/footer-letters/N_shadow.png"
               transform="translate(-367.623 -329.24)"
               overflow="visible"
               opacity=".25"
@@ -75,7 +75,7 @@ function RollingLetters() {
             <image
               width="1415"
               height="1375"
-              href="/imgs/somos/footer-letters/T_shadow.png"
+              href="./imgs/somos/footer-letters/T_shadow.png"
               transform="translate(-367.19 -342.406)"
               overflow="visible"
               opacity=".25"
@@ -88,7 +88,7 @@ function RollingLetters() {
             <image
               width="1445"
               height="1379"
-              href="/imgs/somos/footer-letters/Y_shadow.png"
+              href="./imgs/somos/footer-letters/Y_shadow.png"
               transform="translate(-367.26 -344.467)"
               overflow="visible"
               opacity=".25"
@@ -101,7 +101,7 @@ function RollingLetters() {
             <image
               width="1422"
               height="1383"
-              href="/imgs/somos/footer-letters/O_shadow.png"
+              href="./imgs/somos/footer-letters/O_shadow.png"
               transform="translate(-366.15 -346.683)"
               overflow="visible"
               opacity=".25"
@@ -114,7 +114,7 @@ function RollingLetters() {
             <image
               width="1437"
               height="1379"
-              href="/imgs/somos/footer-letters/U_shadow.png"
+              href="./imgs/somos/footer-letters/U_shadow.png"
               transform="translate(-368.87 -344.408)"
               overflow="visible"
               opacity=".25"

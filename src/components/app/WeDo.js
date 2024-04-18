@@ -16,10 +16,10 @@ function WeDo() {
                 data-targetclass="single-service"
                 data-title="Nearshore"
               >
-                <img src="/imgs/home/nearshoring.png" alt="" />
+                <img src="./imgs/home/nearshoring.png" alt="" />
                 <img
                   className="hover"
-                  src="/imgs/home/nearshoring-hover.png"
+                  src="./imgs/home/nearshoring-hover.png"
                   alt=""
                 />
                 <h3>Nearshore</h3>
@@ -32,10 +32,10 @@ function WeDo() {
                 data-targetclass="single-service"
                 data-title="Outsourcing"
               >
-                <img src="/imgs/home/outsourcing.png" alt="" />
+                <img src="./imgs/home/outsourcing.png" alt="" />
                 <img
                   className="hover"
-                  src="/imgs/home/outsourcing-hover.png"
+                  src="./imgs/home/outsourcing-hover.png"
                   alt=""
                 />
                 <h3>Outsourcing</h3>
@@ -48,10 +48,10 @@ function WeDo() {
                 data-targetclass="single-service"
                 data-title="Software"
               >
-                <img src="/imgs/home/software.png" alt="" />
+                <img src="./imgs/home/software.png" alt="" />
                 <img
                   className="hover"
-                  src="/imgs/home/software-hover.png"
+                  src="./imgs/home/software-hover.png"
                   alt=""
                 />
                 <h3>Software</h3>

@@ -30,7 +30,7 @@ function ContactHeader() {
         <div className="header-pictogram-wrapper">
           <picture>
             <source
-              srcset="/imgs/estamos/contacts-pictogram-phone.png"
+              srcset="./imgs/estamos/contacts-pictogram-phone.png"
               media="(max-width: 414px)"
             />
             <img

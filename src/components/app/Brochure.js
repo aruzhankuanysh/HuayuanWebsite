@@ -16,7 +16,7 @@ function Brochure() {
               <picture>
                 <img
                   className="alphabeth-image"
-                  src="/imgs/alphabeth_3d/headerA.png"
+                  src="./imgs/alphabeth_3d/headerA.png"
                   alt=""
                 />
               </picture>

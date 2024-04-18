@@ -30,12 +30,12 @@ function HomePage() {
               <div className="xxlarge-4 d-flex xsmall-7">
                 <div className="pt2020-logo">
                   <a href="#" target="_blank" rel="noreferrer">
-                    <img src="/imgs/pt2020.png" alt="Portugal 2020" />
+                    <img src="./imgs/pt2020.png" alt="Portugal 2020" />
                   </a>
                 </div>
                 <div className="apdc-logo">
                   <a href="#" target="_blank" rel="noreferrer">
-                    <img src="/imgs/apdc-logo.png" alt="APDC Logo" />
+                    <img src="./imgs/apdc-logo.png" alt="APDC Logo" />
                   </a>
                 </div>
               </div>
@@ -45,8 +45,8 @@ function HomePage() {
 
         {/*preload */}
         <div className="preload" aria-hidden="true">
-          <img src="/imgs/home/home-header-image.jpg" alt="" />
-          <img src="/imgs/home/home-pictogram.png" alt="" />
+          <img src="./imgs/home/home-header-image.jpg" alt="" />
+          <img src="./imgs/home/home-pictogram.png" alt="" />
         </div>
       </div>
     </div>

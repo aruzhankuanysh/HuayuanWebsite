@@ -94,7 +94,7 @@ function SocialRespons() {
         </div>
         <div className="xxlarge-5 xxlarge-offset-1 medium-6 medium-offset-2 small-9 small-offset-1 xsmall-14 pos-rel">
           <h4>Main Areas of Action:</h4>
-          <ul className="filters" role="list">
+          <ul className="filters">
             <li>
               <span className="circle purple"></span>
               <span>Animal</span>
@@ -112,14 +112,14 @@ function SocialRespons() {
       </div>
       <div className="social-responsability-section-articles">
         <div className="social-articles-wrapper">
-          <ul role="list">
+          <ul>
             <li className="article Environment" data-id="0">
               <div className="block-bg-cover">
                 <picture>
                   <img
                     className="element-cover"
                     src="../uploads/2020/10/1.jpg"
-                    alt="Article Image"
+                    alt="Article"
                   />
                 </picture>
               </div>
@@ -146,7 +146,7 @@ function SocialRespons() {
                   <img
                     className="element-cover"
                     src="../uploads/2020/09/edition-praia-1.jpg"
-                    alt="Article Image"
+                    alt="Article"
                   />
                 </picture>
               </div>

@@ -12,11 +12,11 @@ function AboutHaeder() {
           <div className="block-bg-cover">
             <picture>
               <source
-                srcSet="/imgs/somos/about-header-image-phone.jpg"
+                srcSet="./imgs/somos/about-header-image-phone.jpg"
                 media="(max-width: 414px)"
               />
               <source
-                srcSet="/imgs/somos/about-header-image-small.jpg"
+                srcSet="./imgs/somos/about-header-image-small.jpg"
                 media="(max-width: 768px)"
               />
               <img
@@ -31,7 +31,7 @@ function AboutHaeder() {
         <div className="header-pictogram-wrapper">
           <picture>
             <source
-              srcSet="/imgs/somos/about-pictogram-phone.png"
+              srcSet="./imgs/somos/about-pictogram-phone.png"
               media="(max-width: 414px)"
             />
             <img

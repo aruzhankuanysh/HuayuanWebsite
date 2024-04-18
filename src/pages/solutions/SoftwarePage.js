@@ -18,15 +18,15 @@ function SoftwarePage() {
               <div class="block-bg-cover">
                 <picture>
                   <source
-                    srcset="/imgs/software/software-header-phone.jpg"
+                    srcset="./imgs/software/software-header-phone.jpg"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcset="/imgs/software/software-header-small.jpg"
+                    srcset="./imgs/software/software-header-small.jpg"
                     media="(max-width: 768px)"
                   />
                   <source
-                    srcset="/imgs/software/software-header.webp"
+                    srcset="./imgs/software/software-header.webp"
                     type="image/webp"
                   />
                   <img
@@ -46,14 +46,14 @@ function SoftwarePage() {
               <div class="letter-wrapper">
                 <picture>
                   <source
-                    srcset="/imgs/alphabeth_3d/headerS_phone.png"
+                    srcset="./imgs/alphabeth_3d/headerS_phone.png"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcset="/imgs/alphabeth_3d/headerS.webp 1x, /imgs/alphabeth_3d/headerS@2x.webp 2x"
+                    srcset="./imgs/alphabeth_3d/headerS.webp 1x, /imgs/alphabeth_3d/headerS@2x.webp 2x"
                     type="image/webp"
                   />
-                  <source srcset="/imgs/alphabeth_3d/headerS.png 1x, /imgs/alphabeth_3d/headerS@2x.png 2x" />
+                  <source srcset="./imgs/alphabeth_3d/headerS.png 1x, /imgs/alphabeth_3d/headerS@2x.png 2x" />
                   <img
                     class="letter"
                     src="../imgs/alphabeth_3d/headerS.png"
@@ -64,7 +64,7 @@ function SoftwarePage() {
               <div class="image-wrapper">
                 <picture>
                   <source
-                    srcset="/imgs/software/software-hands-new-phone.png"
+                    srcset="./imgs/software/software-hands-new-phone.png"
                     media="(max-width: 414px)"
                   />
                   <img
@@ -636,10 +636,10 @@ function SoftwarePage() {
                   <div class="alphabeth-wrapper">
                     <picture>
                       <source
-                        srcset="/imgs/alphabeth_3d/footerN.webp 1x, /imgs/alphabeth_3d/footerN@2x.webp 2x"
+                        srcset="./imgs/alphabeth_3d/footerN.webp 1x, /imgs/alphabeth_3d/footerN@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcset="/imgs/alphabeth_3d/footerN.png 1x, /imgs/alphabeth_3d/footerN@2x.png 2x" />
+                      <source srcset="./imgs/alphabeth_3d/footerN.png 1x, /imgs/alphabeth_3d/footerN@2x.png 2x" />
                       <img
                         class="alphabeth-image"
                         src="../imgs/alphabeth_3d/footerN.png"
@@ -649,10 +649,10 @@ function SoftwarePage() {
 
                     <picture>
                       <source
-                        srcset="/imgs/alphabeth_3d/footerN_shadow.webp 1x, /imgs/alphabeth_3d/footerN_shadow@2x.webp 2x"
+                        srcset="./imgs/alphabeth_3d/footerN_shadow.webp 1x, /imgs/alphabeth_3d/footerN_shadow@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcset="/imgs/alphabeth_3d/footerN_shadow.png 1x, /imgs/alphabeth_3d/footerN_shadow@2x.png 2x" />
+                      <source srcset="./imgs/alphabeth_3d/footerN_shadow.png 1x, /imgs/alphabeth_3d/footerN_shadow@2x.png 2x" />
                       <img
                         class="alphabeth-shadow"
                         src="../imgs/alphabeth_3d/footerN_shadow.png"
@@ -663,7 +663,7 @@ function SoftwarePage() {
                   <div class="image-wrapper">
                     <picture>
                       <source
-                        srcset="/imgs/nearshoring/nearshoring-owl.webp"
+                        srcset="./imgs/nearshoring/nearshoring-owl.webp"
                         type="image/webp"
                       />
                       <img

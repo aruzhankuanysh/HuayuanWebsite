@@ -13,11 +13,11 @@ function CareersHeader() {
             <picture>
               {/* <source srcSet="" type="image/webp"> */}
               <source
-                srcSet="/imgs/queremos/careers-header-image-phone.jpg"
+                srcSet="./imgs/queremos/careers-header-image-phone.jpg"
                 media="(max-width: 414px)"
               />
               <source
-                srcSet="/imgs/queremos/careers-header-image-small.jpg"
+                srcSet="./imgs/queremos/careers-header-image-small.jpg"
                 media="(max-width: 768px)"
               />
               <img
@@ -32,7 +32,7 @@ function CareersHeader() {
         <div className="header-pictogram-wrapper">
           <picture>
             <source
-              srcSet="/imgs/queremos/careers-pictogram-phone.png"
+              srcSet="./imgs/queremos/careers-pictogram-phone.png"
               media="(max-width: 414px)"
             />
             <img

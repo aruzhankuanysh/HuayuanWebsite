@@ -92,7 +92,7 @@ function CareersPage() {
                       <image
                         width="1451"
                         height="1349"
-                        href="/imgs/somos/footer-letters/W_shadow.png"
+                        href="./imgs/somos/footer-letters/W_shadow.png"
                         transform="translate(-370.5 -339.5)"
                         overflow="visible"
                         opacity=".25"
@@ -108,7 +108,7 @@ function CareersPage() {
                       <image
                         width="1326"
                         height="1366"
-                        href="/imgs/somos/footer-letters/E_shadow.png"
+                        href="./imgs/somos/footer-letters/E_shadow.png"
                         transform="translate(-368.094 -348)"
                         overflow="visible"
                         opacity=".25"
@@ -121,7 +121,7 @@ function CareersPage() {
                       <image
                         width="1453"
                         height="1344"
-                        href="/imgs/somos/footer-letters/A_shadow.png"
+                        href="./imgs/somos/footer-letters/A_shadow.png"
                         transform="translate(-366.5 -337.5)"
                         overflow="visible"
                         opacity=".25"
@@ -137,7 +137,7 @@ function CareersPage() {
                       <image
                         width="1350"
                         height="1361"
-                        href="/imgs/somos/footer-letters/R_shadow.png"
+                        href="./imgs/somos/footer-letters/R_shadow.png"
                         transform="translate(-364.944 -335.568)"
                         overflow="visible"
                         opacity=".25"
@@ -153,7 +153,7 @@ function CareersPage() {
                       <image
                         width="1326"
                         height="1366"
-                        href="/imgs/somos/footer-letters/E_shadow.png"
+                        href="./imgs/somos/footer-letters/E_shadow.png"
                         transform="translate(-368.094 -348)"
                         overflow="visible"
                         opacity=".25"

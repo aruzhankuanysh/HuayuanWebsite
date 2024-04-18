@@ -17,15 +17,15 @@ function OutsourcingPage() {
               <div className="block-bg-cover">
                 <picture>
                   <source
-                    srcset="/imgs/outsourcing/outsourcing-header-phone.jpg"
+                    srcset="./imgs/outsourcing/outsourcing-header-phone.jpg"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcset="/imgs/outsourcing/outsourcing-header-small.jpg"
+                    srcset="./imgs/outsourcing/outsourcing-header-small.jpg"
                     media="(max-width: 768px)"
                   />
                   <source
-                    srcset="/imgs/outsourcing/outsourcing-header.webp"
+                    srcset="./imgs/outsourcing/outsourcing-header.webp"
                     type="image/webp"
                   />
                   <img
@@ -45,14 +45,14 @@ function OutsourcingPage() {
               <div className="letter-wrapper">
                 <picture>
                   <source
-                    srcset="/imgs/alphabeth_3d/headerO_phone.png"
+                    srcset="./imgs/alphabeth_3d/headerO_phone.png"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcset="/imgs/alphabeth_3d/headerO.webp 1x, /imgs/alphabeth_3d/headerO@2x.webp 2x"
+                    srcset="./imgs/alphabeth_3d/headerO.webp 1x, /imgs/alphabeth_3d/headerO@2x.webp 2x"
                     type="image/webp"
                   />
-                  <source srcset="/imgs/alphabeth_3d/headerO.png 1x, /imgs/alphabeth_3d/headerO@2x.png 2x" />
+                  <source srcset="./imgs/alphabeth_3d/headerO.png 1x, /imgs/alphabeth_3d/headerO@2x.png 2x" />
                   <img
                     className="letter"
                     src="../imgs/alphabeth_3d/headerO.png"
@@ -63,7 +63,7 @@ function OutsourcingPage() {
               <div className="image-wrapper">
                 <picture>
                   <source
-                    srcset="/imgs/outsourcing/outsourcing-suricata-phone.png"
+                    srcset="./imgs/outsourcing/outsourcing-suricata-phone.png"
                     media="(max-width: 414px)"
                   />
                   <img
@@ -1155,10 +1155,10 @@ function OutsourcingPage() {
                   <div className="alphabeth-wrapper">
                     <picture>
                       <source
-                        srcset="/imgs/alphabeth_3d/footerS.webp 1x, /imgs/alphabeth_3d/footerS@2x.webp 2x"
+                        srcset="./imgs/alphabeth_3d/footerS.webp 1x, /imgs/alphabeth_3d/footerS@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcset="/imgs/alphabeth_3d/footerS.png 1x, /imgs/alphabeth_3d/footerS@2x.png 2x" />
+                      <source srcset="./imgs/alphabeth_3d/footerS.png 1x, /imgs/alphabeth_3d/footerS@2x.png 2x" />
                       <img
                         className="alphabeth-image"
                         src="../imgs/alphabeth_3d/footerS.png"
@@ -1168,10 +1168,10 @@ function OutsourcingPage() {
 
                     <picture>
                       <source
-                        srcset="/imgs/alphabeth_3d/footerS_shadow.webp 1x, /imgs/alphabeth_3d/footerS_shadow@2x.webp 2x"
+                        srcset="./imgs/alphabeth_3d/footerS_shadow.webp 1x, /imgs/alphabeth_3d/footerS_shadow@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcset="/imgs/alphabeth_3d/footerS_shadow.png 1x, /imgs/alphabeth_3d/footerS_shadow@2x.png 2x" />
+                      <source srcset="./imgs/alphabeth_3d/footerS_shadow.png 1x, /imgs/alphabeth_3d/footerS_shadow@2x.png 2x" />
                       <img
                         className="alphabeth-shadow"
                         src="../imgs/alphabeth_3d/footerS_shadow.png"
@@ -1182,7 +1182,7 @@ function OutsourcingPage() {
                   <div className="image-wrapper">
                     <picture>
                       <source
-                        srcset="/imgs/software/software-hands.webp"
+                        srcset="./imgs/software/software-hands.webp"
                         type="image/webp"
                       />
                       <img

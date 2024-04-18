@@ -17,15 +17,15 @@ function NearshorePage() {
               <div className="block-bg-cover">
                 <picture>
                   <source
-                    srcSet="/imgs/nearshoring/nearshoring-header-phone.jpg"
+                    srcSet="./imgs/nearshoring/nearshoring-header-phone.jpg"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcSet="/imgs/nearshoring/nearshoring-header-small.jpg"
+                    srcSet="./imgs/nearshoring/nearshoring-header-small.jpg"
                     media="(max-width: 768px)"
                   />
                   <source
-                    srcSet="/imgs/nearshoring/nearshoring-header.webp"
+                    srcSet="./imgs/nearshoring/nearshoring-header.webp"
                     type="image/webp"
                   />
                   <img
@@ -45,14 +45,14 @@ function NearshorePage() {
               <div className="letter-wrapper">
                 <picture>
                   <source
-                    srcSet="/imgs/alphabeth_3d/headerN_phone.png"
+                    srcSet="./imgs/alphabeth_3d/headerN_phone.png"
                     media="(max-width: 414px)"
                   />
                   <source
-                    srcSet="/imgs/alphabeth_3d/headerN.webp 1x, /imgs/alphabeth_3d/headerN@2x.webp 2x"
+                    srcSet="./imgs/alphabeth_3d/headerN.webp 1x, /imgs/alphabeth_3d/headerN@2x.webp 2x"
                     type="image/webp"
                   />
-                  <source srcSet="/imgs/alphabeth_3d/headerN.png 1x, /imgs/alphabeth_3d/headerN@2x.png 2x" />
+                  <source srcSet="./imgs/alphabeth_3d/headerN.png 1x, /imgs/alphabeth_3d/headerN@2x.png 2x" />
                   <img
                     className="letter"
                     src="./imgs/alphabeth_3d/headerN.png"
@@ -63,7 +63,7 @@ function NearshorePage() {
               <div className="image-wrapper">
                 <picture>
                   <source
-                    srcSet="/imgs/nearshoring/nearshoring-owl-phone.png"
+                    srcSet="./imgs/nearshoring/nearshoring-owl-phone.png"
                     media="(max-width: 414px)"
                   />
                   <img
@@ -893,11 +893,11 @@ function NearshorePage() {
                 <div className="image-wrapper">
                   <picture>
                     <source
-                      srcSet="/imgs/nearshoring/mockup.webp 1x, /imgs/nearshoring/mockup@2x.webp 2x"
+                      srcSet="./imgs/nearshoring/mockup.webp 1x, /imgs/nearshoring/mockup@2x.webp 2x"
                       type="image/webp"
                     />
                     <source
-                      srcSet="/imgs/nearshoring/mockup.png 1x, /imgs/nearshoring/mockup@2x.png 2x"
+                      srcSet="./imgs/nearshoring/mockup.png 1x, /imgs/nearshoring/mockup@2x.png 2x"
                       type="image/png"
                     />
                     <img
@@ -2045,10 +2045,10 @@ function NearshorePage() {
                   <div className="alphabeth-wrapper">
                     <picture>
                       <source
-                        srcSet="/imgs/alphabeth_3d/footerO.webp 1x, /imgs/alphabeth_3d/footerO@2x.webp 2x"
+                        srcSet="./imgs/alphabeth_3d/footerO.webp 1x, /imgs/alphabeth_3d/footerO@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcSet="/imgs/alphabeth_3d/footerO.png 1x, /imgs/alphabeth_3d/footerO@2x.png 2x" />
+                      <source srcSet="./imgs/alphabeth_3d/footerO.png 1x, /imgs/alphabeth_3d/footerO@2x.png 2x" />
                       <img
                         className="alphabeth-image"
                         src="./imgs/alphabeth_3d/footerO.png"
@@ -2058,10 +2058,10 @@ function NearshorePage() {
 
                     <picture>
                       <source
-                        srcSet="/imgs/alphabeth_3d/footerO_shadow.webp 1x, /imgs/alphabeth_3d/footerO_shadow@2x.webp 2x"
+                        srcSet="./imgs/alphabeth_3d/footerO_shadow.webp 1x, /imgs/alphabeth_3d/footerO_shadow@2x.webp 2x"
                         type="image/webp"
                       />
-                      <source srcSet="/imgs/alphabeth_3d/footerO_shadow.png 1x, /imgs/alphabeth_3d/footerO_shadow@2x.png 2x" />
+                      <source srcSet="./imgs/alphabeth_3d/footerO_shadow.png 1x, /imgs/alphabeth_3d/footerO_shadow@2x.png 2x" />
                       <img
                         className="alphabeth-shadow"
                         src="./imgs/alphabeth_3d/footerO_shadow.png"
@@ -2072,7 +2072,7 @@ function NearshorePage() {
                   <div className="image-wrapper">
                     <picture>
                       <source
-                        srcSet="/imgs/outsourcing/outsourcing-suricata.webp"
+                        srcSet="./imgs/outsourcing/outsourcing-suricata.webp"
                         type="image/webp"
                       />
                       <img

@@ -18,15 +18,15 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="/About" element={<AboutPage />} />
-        <Route path="/Solutions" element={<SolutionsPage />} />
-        <Route path="/Careers" element={<CareersPage />} />
-        <Route path="/News" element={<NewsPage />} />
-        <Route path="/Contacts" element={<ContactsPage />} />
-        <Route path="/Nearshore" element={<NearshorePage />} />
-        <Route path="/Outsourcing" element={<OutsourcingPage />} />
-        <Route path="/Software" element={<SoftwarePage />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="solutions" element={<SolutionsPage />} />
+        <Route path="careers" element={<CareersPage />} />
+        <Route path="news" element={<NewsPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
+        <Route path="nearshore" element={<NearshorePage />} />
+        <Route path="outsourcing" element={<OutsourcingPage />} />
+        <Route path="software" element={<SoftwarePage />} />
+        <Route path="privacyPolicy" element={<PrivacyPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>

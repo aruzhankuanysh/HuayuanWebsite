@@ -34,7 +34,7 @@ function Header() {
             data-controller="somos-page"
           >
             <a
-              href="/About"
+              href="/about"
               data-remote="true"
               data-targetclass="somos"
               data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
@@ -49,7 +49,7 @@ function Header() {
             data-controller="fazemos-page"
           >
             <a
-              href="/Solutions"
+              href="/solutions"
               data-remote="true"
               data-targetclass="fazemos"
               data-ajaxurl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
@@ -64,7 +64,7 @@ function Header() {
             data-controller="queremos-te-page"
           >
             <a
-              href="/Careers"
+              href="/careers"
               data-remote="true"
               data-targetclass="queremos"
               data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
@@ -79,7 +79,7 @@ function Header() {
             data-controller="noticias-page"
           >
             <a
-              href="/News"
+              href="/news"
               data-remote="true"
               data-targetclass="noticias"
               data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
@@ -94,7 +94,7 @@ function Header() {
             data-controller="estamos-page"
           >
             <a
-              href="/Contacts"
+              href="/contacts"
               data-remote="true"
               data-targetclass="estamos"
               data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
