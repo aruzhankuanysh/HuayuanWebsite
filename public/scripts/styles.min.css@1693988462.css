@@ -40782,3 +40782,27 @@ website:    http://www.burocratik.com
   font-size: 36px;
   line-height: 36px;
 }
+
+.dropdown-menu {
+  z-index: 1;
+  position: absolute;
+  background-color: #006cfc;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 12px 25px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: "Cera";
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 40px;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+}
