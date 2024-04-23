@@ -1,7 +1,9 @@
 import React from "react";
 import SocialLinks from "../SocialLinks";
+import { useTranslation } from "react-i18next";
 
 function AppHeader() {
+  const { t } = useTranslation();
   return (
     <header className="page-header">
       <h1 style={{ pointerEvents: "none", position: "absolute" }}>
@@ -34,7 +36,7 @@ function AppHeader() {
             </video>
           </div>
           <div className="video-event-split active people" data-id="people">
-            <span>People</span>
+            <span>{t("people")}</span>
             <svg viewBox="0 0 175 175">
               <path
                 className="line"
@@ -44,7 +46,7 @@ function AppHeader() {
             </svg>
           </div>
           <div className="video-event-split business" data-id="business">
-            <span>Business</span>
+            <span>{t("business")}</span>
             <svg viewBox="0 0 175 175">
               <path
                 className="line"
@@ -72,10 +74,9 @@ function AppHeader() {
         </svg>
       </div>
       <div className="popup-link">
-        <h4>Should we get started?</h4>
+        <h4>{t("shouldwegetstarted")}</h4>
         <p>
-          Got a question? Want to start a new project? Want to be an Affinity
-          Player? This way to begin the conversation.
+          {t("gotaquestion")}
         </p>
         <a
           href="/Contacts"
@@ -91,7 +92,7 @@ function AppHeader() {
               data-hover="M5.1 37.3C7.1 63.2 20.7 63 41.5 63s68.2.1 89 0S159 52.3 159 34.5 151.1 6 130.5 6h-89C18.9 6 3.2 9.5 5.1 37.3z"
             />
           </svg>
-          <span className="text">Start Now</span>
+          <span className="text">{t("startnow")}</span>
         </a>
       </div>
     </header>

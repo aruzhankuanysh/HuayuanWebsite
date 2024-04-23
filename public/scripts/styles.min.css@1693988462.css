@@ -3200,7 +3200,7 @@ button {
 .mobile #header-main .language-wrapper .active-language .lg {
   text-transform: uppercase;
 }
-.mobile #header-main .language-wrapper .other-languages li a {
+.mobile #header-main .language-wrapper .other-languages li button {
   text-transform: uppercase;
 }
 .webgl-fallback {
@@ -3547,7 +3547,7 @@ button {
 #header-main .language-wrapper .other-languages li.lang-item-fr {
   display: none;
 }
-#header-main .language-wrapper .other-languages li a {
+#header-main .language-wrapper .other-languages li button {
   font-family: "Cera";
   font-size: 20px;
   line-height: 30px;
@@ -6921,7 +6921,7 @@ section:before,
     font-size: 18px;
     line-height: 26px;
   }
-  #header-main .language-wrapper .other-languages li a {
+  #header-main .language-wrapper .other-languages li button {
     font-size: 18px;
     line-height: 26px;
   }
@@ -7143,7 +7143,7 @@ section:before,
     padding: 0;
     opacity: 0.3;
   }
-  #header-main .language-wrapper .other-languages li a {
+  #header-main .language-wrapper .other-languages li button {
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -10089,7 +10089,7 @@ a[href^="https://www.google.com/maps"]
   fill: #7245ce;
 }
 .somos #header-main .language-wrapper .active-language .lg,
-.somos #header-main .language-wrapper .other-languages li a {
+.somos #header-main .language-wrapper .other-languages li button {
   color: #7245ce;
 }
 .somos #header-main .language-wrapper .active-language .arrow path {
@@ -12259,7 +12259,7 @@ a[href^="https://www.google.com/maps"]
     transform: scale(1);
   }
   .somos #header-main .language-wrapper .active-language .lg,
-  .somos #header-main .language-wrapper .other-languages li a {
+  .somos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .somos.js-nav-mobile-open #header-main .main-logo svg path {
@@ -12700,7 +12700,7 @@ a[href^="https://www.google.com/maps"]
   fill: #f77b81;
 }
 .estamos #header-main .language-wrapper .active-language .lg,
-.estamos #header-main .language-wrapper .other-languages li a {
+.estamos #header-main .language-wrapper .other-languages li button {
   color: #f77b81;
 }
 .estamos #header-main .language-wrapper .active-language .arrow path {
@@ -13763,7 +13763,7 @@ a[href^="https://www.google.com/maps"]
 }
 @media only screen and (max-width: 810px) {
   .estamos #header-main .language-wrapper .active-language .lg,
-  .estamos #header-main .language-wrapper .other-languages li a {
+  .estamos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .estamos.js-nav-mobile-open #header-main .main-logo svg path {
@@ -14063,7 +14063,7 @@ a[href^="https://www.google.com/maps"]
 .single-service #header-main .language-wrapper .active-language .arrow path {
   stroke: #006cfc;
 }
-.single-service #header-main .language-wrapper .other-languages li a {
+.single-service #header-main .language-wrapper .other-languages li button {
   color: #006cfc;
 }
 .single-service #hashtag-scroll h2 {
@@ -17669,7 +17669,7 @@ a[href^="https://www.google.com/maps"]
   .single-service #header-main .language-wrapper .active-language .arrow path {
     stroke: #ffffff;
   }
-  .single-service #header-main .language-wrapper .other-languages li a {
+  .single-service #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .single-service-page .page-header {
@@ -18814,7 +18814,7 @@ a[href^="https://www.google.com/maps"]
   fill: #49e2bb;
 }
 .queremos #header-main .language-wrapper .active-language .lg,
-.queremos #header-main .language-wrapper .other-languages li a {
+.queremos #header-main .language-wrapper .other-languages li button {
   color: #49e2bb;
 }
 .queremos #header-main .language-wrapper .active-language .arrow path {
@@ -19667,7 +19667,7 @@ a[href^="https://www.google.com/maps"]
 }
 @media only screen and (max-width: 810px) {
   .queremos #header-main .language-wrapper .active-language .lg,
-  .queremos #header-main .language-wrapper .other-languages li a {
+  .queremos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .queremos.js-nav-mobile-open #header-main .main-logo svg path {
@@ -23586,7 +23586,7 @@ button {
 .mobile #header-main .language-wrapper .active-language .lg {
   text-transform: uppercase;
 }
-.mobile #header-main .language-wrapper .other-languages li a {
+.mobile #header-main .language-wrapper .other-languages li button {
   text-transform: uppercase;
 }
 .webgl-fallback {
@@ -23933,7 +23933,7 @@ button {
 #header-main .language-wrapper .other-languages li.lang-item-fr {
   display: none;
 }
-#header-main .language-wrapper .other-languages li a {
+#header-main .language-wrapper .other-languages li button {
   font-family: "Cera";
   font-size: 20px;
   line-height: 30px;
@@ -27320,7 +27320,7 @@ section:before,
     font-size: 18px;
     line-height: 26px;
   }
-  #header-main .language-wrapper .other-languages li a {
+  #header-main .language-wrapper .other-languages li button {
     font-size: 18px;
     line-height: 26px;
   }
@@ -27542,7 +27542,7 @@ section:before,
     padding: 0;
     opacity: 0.3;
   }
-  #header-main .language-wrapper .other-languages li a {
+  #header-main .language-wrapper .other-languages li button {
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -30486,7 +30486,7 @@ a[href^="https://www.google.com/maps"]
   fill: #7245ce;
 }
 .somos #header-main .language-wrapper .active-language .lg,
-.somos #header-main .language-wrapper .other-languages li a {
+.somos #header-main .language-wrapper .other-languages li button {
   color: #7245ce;
 }
 .somos #header-main .language-wrapper .active-language .arrow path {
@@ -32656,7 +32656,7 @@ a[href^="https://www.google.com/maps"]
     transform: scale(1);
   }
   .somos #header-main .language-wrapper .active-language .lg,
-  .somos #header-main .language-wrapper .other-languages li a {
+  .somos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .somos.js-nav-mobile-open #header-main .main-logo svg path {
@@ -33097,7 +33097,7 @@ a[href^="https://www.google.com/maps"]
   fill: #f77b81;
 }
 .estamos #header-main .language-wrapper .active-language .lg,
-.estamos #header-main .language-wrapper .other-languages li a {
+.estamos #header-main .language-wrapper .other-languages li button {
   color: #f77b81;
 }
 .estamos #header-main .language-wrapper .active-language .arrow path {
@@ -34160,7 +34160,7 @@ a[href^="https://www.google.com/maps"]
 }
 @media only screen and (max-width: 810px) {
   .estamos #header-main .language-wrapper .active-language .lg,
-  .estamos #header-main .language-wrapper .other-languages li a {
+  .estamos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .estamos.js-nav-mobile-open #header-main .main-logo svg path {
@@ -34460,7 +34460,7 @@ a[href^="https://www.google.com/maps"]
 .single-service #header-main .language-wrapper .active-language .arrow path {
   stroke: #006cfc;
 }
-.single-service #header-main .language-wrapper .other-languages li a {
+.single-service #header-main .language-wrapper .other-languages li button {
   color: #006cfc;
 }
 .single-service #hashtag-scroll h2 {
@@ -38066,7 +38066,7 @@ a[href^="https://www.google.com/maps"]
   .single-service #header-main .language-wrapper .active-language .arrow path {
     stroke: #ffffff;
   }
-  .single-service #header-main .language-wrapper .other-languages li a {
+  .single-service #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .single-service-page .page-header {
@@ -39211,7 +39211,7 @@ a[href^="https://www.google.com/maps"]
   fill: #49e2bb;
 }
 .queremos #header-main .language-wrapper .active-language .lg,
-.queremos #header-main .language-wrapper .other-languages li a {
+.queremos #header-main .language-wrapper .other-languages li button {
   color: #49e2bb;
 }
 .queremos #header-main .language-wrapper .active-language .arrow path {
@@ -40064,7 +40064,7 @@ a[href^="https://www.google.com/maps"]
 }
 @media only screen and (max-width: 810px) {
   .queremos #header-main .language-wrapper .active-language .lg,
-  .queremos #header-main .language-wrapper .other-languages li a {
+  .queremos #header-main .language-wrapper .other-languages li button {
     color: #ffffff;
   }
   .queremos.js-nav-mobile-open #header-main .main-logo svg path {

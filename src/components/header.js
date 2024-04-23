@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 function Header() {
+  const { t } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); 
+    setCurrentLanguage(language); 
+    localStorage.setItem('selectedLanguage', language); 
+  };
   return (
     <header
       id="header-main"
@@ -40,7 +50,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
-              About
+              {t("about")}
             </a>
           </li>
           <li
@@ -55,7 +65,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
-              Solutions
+              {t("solutions")}
             </a>
           </li>
           <li
@@ -70,7 +80,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
-              Careers
+              {t("careers")}
             </a>
           </li>
           <li
@@ -85,7 +95,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
-              News
+              {t("news")}
             </a>
           </li>
           <li
@@ -100,22 +110,35 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
-              Contacts
+              {t("contacts")}
             </a>
           </li>
         </ul>
       </div>
       <div className="xxlarge-2 xlarge-3 large-3 large-offset-0 medium-2 medium-offset-0 small-6 small-order-1 xsmall-8 columns hide-mob txt-right desktop-language">
         <div className="language-wrapper">
-          <button className="active-language">
-            <span className="lg">English</span>
+          {/* Вывод текущего языка */}
+          <button
+            className="active-language"
+            onClick={() => changeLanguage("en")}
+          >
+            <span className="lg">
+              {currentLanguage === "en" ? "English" : "中文"}
+            </span>
             <svg className="arrow" viewBox="0 0 18 12">
               <path d="M16.5 1.9L9 10.1 1.5 1.9" />
             </svg>
           </button>
+          {/* Кнопки для других языков */}
           <ul className="other-languages">
             <li>
-              <a href="https://affinity.pt/">Português</a>
+              <button
+                onClick={() =>
+                  changeLanguage(currentLanguage === "en" ? "ch" : "en")
+                }
+              >
+                {currentLanguage === "en" ? "中文" : "English"}
+              </button>
             </li>
           </ul>
         </div>
@@ -206,9 +229,13 @@ function Header() {
             </button>
             <ul className="other-languages">
               <li className="lang-item lang-item-2 lang-item-pt lang-item-first">
-                <a lang="pt-PT" hrefLang="pt-PT" href="https://affinity.pt/">
+                <button
+                  lang="pt-PT"
+                  hrefLang="pt-PT"
+                  href="https://affinity.pt/"
+                >
                   pt
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -222,7 +249,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/somos-ajax/?ajax-id=98"
               data-title="About"
             >
-              About
+              {t("about")}
             </a>
           </li>
           <li className="" data-color="#006cfc" data-controller="fazemos-page">
@@ -233,7 +260,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/fazemos-ajax/?ajax-id=96"
               data-title="Solutions"
             >
-              Solutions
+              {t("solutions")}
             </a>
           </li>
           <li
@@ -248,7 +275,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/queremos-te-ajax/?ajax-id=821"
               data-title="Careers"
             >
-              Careers
+              {t("careers")}
             </a>
           </li>
           <li data-controller="noticias-page">
@@ -259,7 +286,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/noticias-ajax/?ajax-id=https://affinity.pt"
               data-title=""
             >
-              News
+              {t("news")}
             </a>
           </li>
           <li className="" data-color="#f77b81" data-controller="estamos-page">
@@ -270,7 +297,7 @@ function Header() {
               data-ajaxurl="https://affinity.pt/en/ajax/estamos-ajax/?ajax-id=92"
               data-title="Contacts"
             >
-              Contacts
+              {t("contacts")}
             </a>
           </li>
         </ul>

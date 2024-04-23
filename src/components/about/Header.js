@@ -1,7 +1,9 @@
 import React from "react";
 import SocialLinks from "../SocialLinks";
+import { useTranslation } from "react-i18next";
 
 function AboutHaeder() {
+  const { t } = useTranslation();
   return (
     <header className="page-header">
       <div className="background-wrapper">
@@ -45,8 +47,8 @@ function AboutHaeder() {
         <div className="row expanded align-middle medium-collapse">
           <div className="xxlarge-8 xxlarge-offset-5 xlarge-offset-5 large-9 large-offset-4 medium-10 medium-offset-4 small-14 small-offset-1 columns">
             <div className="header-text">
-              <h1>Our nature is effortless technology.</h1>
-              <h2>We make things run as smooth as nature.</h2>
+              <h1>{t('ournatureiseffortlesstechnology')}</h1>
+              <h2>{t('wemakethingsrunassmoothasnature')}</h2>
             </div>
           </div>
         </div>

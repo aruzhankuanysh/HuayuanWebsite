@@ -12,8 +12,18 @@ import OutsourcingPage from "./pages/solutions/OutsourcingPage";
 import SoftwarePage from "./pages/solutions/SoftwarePage";
 import PrivacyPage from "./pages/PrivPolicyPage";
 import ErrorPage from "./pages/ErrorPage";
+import i18n from "./i18n";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [currentLanguage, setCurrentLanguage] = useState(
+    localStorage.getItem('selectedLanguage') || 'en'
+  );
+
+  useEffect(() => {
+    i18n.changeLanguage(currentLanguage);
+  }, [currentLanguage]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
